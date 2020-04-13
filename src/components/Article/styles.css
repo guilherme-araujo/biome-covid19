@@ -1,0 +1,39 @@
+
+
+.img_article {    
+  max-width: 1200px;
+  height: auto;
+  width: 100%;
+  object-fit: scale-down;
+  margin: 2em 0 0;
+}
+
+figcaption {
+  font-weight: bold; 
+}
+
+.a-article:hover {
+  text-decoration: none;
+  color: blue;
+}
+
+.a-article:link {
+  text-decoration: none;
+  color: blue;
+}
+
+.a-article:visited {
+  text-decoration: none;
+  color: blue;
+}
+
+.article {
+  margin: 4em 0 4em;
+}
+
+figure {
+  counter-increment: figure;
+  margin: 2em 0 2.333em;
+  text-align: center; 
+  width: 100%
+}

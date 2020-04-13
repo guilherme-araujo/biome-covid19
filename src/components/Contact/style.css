@@ -1,0 +1,19 @@
+.contact {
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+
+.hr-more {
+    width: 80vw;
+    margin-left: 0vw;
+}
+
+.contact-col-right {
+    min-height: 120px;
+    align-content: center;
+    line-height: 1rem;
+}
+
+.icon-contact{
+    max-height: 50px;
+}
