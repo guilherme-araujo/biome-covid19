@@ -7,6 +7,7 @@ import contactIcon5 from '../../assets/icons/contact-icon5.png';
 import contactIcon6 from '../../assets/icons/contact-icon6.png';
 
 import './style.css';
+import Key from './apikey';
 
 export default function Contact() {
 
@@ -39,7 +40,7 @@ export default function Contact() {
                             frameborder="0" 
                             style={{border: "0"}}
                             className="p-3"
-                            src="https://www.google.com/maps/embed/v1/search?key=AIzaSyCCAxohwnanbPl353YuebMEN16Tt9eD9Ck&q=BioME" allowfullscreen>
+                            src={`https://www.google.com/maps/embed/v1/search?key=${Key}&q=BioME`} allowfullscreen>
                         </iframe>
                        
                       </Row>
