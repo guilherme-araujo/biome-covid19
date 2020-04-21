@@ -8,12 +8,12 @@ import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 import matplotlib as mpl
 
-covid_norm = pd.read_csv('covid_norm.csv')
-covid_norm2 = pd.read_csv('covid_norm2.csv')
-covid_deaths = pd.read_csv('covid_deaths.csv')
+covid_norm = pd.read_csv('covid-normalizado-2020-04-21-2.csv', decimal=',')
+covid_norm2 = pd.read_csv('cumulativo-2020-04-21.csv')
+covid_deaths = pd.read_csv('deaths-2020-04-21.csv')
 
-covid_norm2['date'] = pd.to_datetime(covid_norm2['date'], errors='coerce')
-covid_norm['date'] = pd.to_datetime(covid_norm['date'], errors='coerce')
+covid_norm2['date'] = pd.to_datetime(covid_norm2['date'], errors='coerce', format='%d/%m/%Y')
+covid_norm['date'] = pd.to_datetime(covid_norm['date'], errors='coerce', format='%d/%m/%Y')
 #covid_deaths['total'] = np.log(covid_deaths['total'].astype(float))
 #covid_deaths['daily'] = np.log(covid_deaths['daily'].astype(float))
 covid_deaths['total'] = covid_deaths['total'].replace({0: np.nan})
@@ -21,13 +21,15 @@ covid_deaths['daily'] = covid_deaths['daily'].replace({0: np.nan})
 
 
 #sns.set(style="ticks", rc={"lines.linewidth": 0.9})
+version_str = '0421'
 
 
 fig_dims = (6, 4)
 fig, ax = plt.subplots(figsize=fig_dims)
 
+'''
 #-----FIGURA 1-----
-'''g = sns.lineplot(data=covid_norm2, x="date", y="cumulative", hue="Country")
+g = sns.lineplot(data=covid_norm2, x="date", y="cumulative", hue="country")
 
 
 box = g.get_position()
@@ -44,13 +46,12 @@ ax.set(xlabel="Date", ylabel="Total Cases (cumulative)" )
 #fig.autofmt_xdate()
 plt.setp(ax.get_xticklabels(), rotation=30, horizontalalignment='right')
 
+plt.savefig(version_str+"-01.png", dpi=200, bbox_inches = "tight")'''
 
-
-plt.savefig("v4-01.png", dpi=200, bbox_inches = "tight")'''
 
 #-----FIGURA 2-----
 
-'''g = sns.lineplot(data=covid_norm2, x="cumulative", y="confirmed", hue="Country", estimator=None)
+g = sns.lineplot(data=covid_norm2, x="cumulative", y="confirmed", hue="country", estimator=None)
 ax.set(xscale="log", yscale="log")
 ax.set(xlabel="Total cases (log scale)", ylabel="New Cases (log scale)" )
 
@@ -59,11 +60,11 @@ g.set_position([box.x0, box.y0, box.width * 0.9, box.height])
 g.legend(loc='center right', bbox_to_anchor=(1.45, 0.5), ncol=1)
 
 #plt.show()
-plt.savefig("v4-02.png", dpi=200, bbox_inches = "tight")'''
+plt.savefig(version_str+"-02.png", dpi=200, bbox_inches = "tight")
 
-
+'''
 #-----FIGURA 3-----
-'''fig, ax = plt.subplots()
+fig, ax = plt.subplots()
 
 covid_norm = covid_norm.dropna(thresh=1)
 covid_norm['date'] = covid_norm['date'].map(lambda x: x.strftime('%m-%d'))
@@ -74,7 +75,7 @@ def plot(x, y, data=None, label=None, **kwargs):
     sns.lineplot(x, y, data=data, label=label, **kwargs)
 
 #g = sns.lineplot(data=covid_norm, x="date", y="media3days", hue="Country", estimator=None)
-g = sns.FacetGrid(covid_norm, col="Country", col_wrap=3, sharex=False, sharey=False, hue="Country")
+g = sns.FacetGrid(covid_norm, col="country", col_wrap=3, sharex=False, sharey=False, hue="country")
 #g = g.map(plt.plot, "date", "media3days")
 g.map_dataframe(plot, 'date', 'media3days')
 
@@ -103,7 +104,7 @@ for ax in g.axes.flat:
 
     labels = ax.get_xticklabels()
     for i,l in enumerate(labels):
-        if (i%2 == 0 ): labels[i] = ''
+        if (i%3 != 0 ): labels[i] = ''
         ax.set_xticklabels(labels, rotation=90)
 
 g.fig.tight_layout()
@@ -114,8 +115,9 @@ plt.subplots_adjust(left=0.075, right=1.0, top=1.0, bottom=0.13)
 
 #plt.show()
 
-plt.savefig("v4-03.png", dpi=200, bbox_inches = "tight")'''
+plt.savefig(version_str+"-03.png", dpi=200, bbox_inches = "tight")'''
 
+'''
 # -----FIGURA 4------
 #fig, ax = plt.subplots()
 
@@ -125,7 +127,7 @@ def plot(x, y, data=None, label=None, **kwargs):
     g.set(yscale='log')
 
 
-g = sns.FacetGrid(covid_deaths, col="Country", col_wrap=3, sharex=False, sharey=False, hue="Country")
+g = sns.FacetGrid(covid_deaths, col="country", col_wrap=3, sharex=False, sharey=False, hue="country")
 
 #g.set(yscale='log', xscale='log')
 #g = g.map(plt.scatter, "total", "daily")
@@ -159,4 +161,4 @@ g.fig.text(x=0.5, y=0.01,
 #ax.set(xscale="log", yscale="log")
 
 #plt.show()
-plt.savefig("v4-04.png", dpi=200, bbox_inches = "tight")
+plt.savefig(version_str+"-04.png", dpi=200, bbox_inches = "tight")'''
