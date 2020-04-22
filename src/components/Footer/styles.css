@@ -1,11 +1,12 @@
-h9 {
+.title-9 {
     color: white;
     font-size: 0.8em;
     font-family: 'Work Sans', Arial, sans-serif;
 }
 
-h7 {
+.title-7 {
     line-height: 2em;
+    color: #F6F6F6;
 }
 
 a:hover {

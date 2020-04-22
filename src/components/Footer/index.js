@@ -21,31 +21,32 @@ export default function Footer() {
                 </Col>
 
                 <Col lg={2} sm={4} xs={6} style={{marginTop: "4em"}} className="d-flex flex-column contact-col-right justify-content-around">
-                    <b><h7 style={{color: "#F6F6F6"}}>GRADUATE PROGRAM</h7></b>
-                    <a className="link-footer" href="https://bioinfo.imd.ufrn.br/index.php?page=graduateprogram"><h8>About the Program</h8></a>
-                    <a className="link-footer" href="https://bioinfo.imd.ufrn.br/index.php?page=graduateprogram#master"><h8>Masters in Bioinformatics</h8></a>
-                    <a className="link-footer" href="https://bioinfo.imd.ufrn.br/index.php?page=graduateprogram#doctorateDegree"><h8>PhD in Bioinformatics</h8></a> 
+                    <b><p className="title-7">GRADUATE PROGRAM</p></b>
+                    <a className="link-footer" href="https://bioinfo.imd.ufrn.br/index.php?page=graduateprogram"><p>About the Program</p></a>
+                    <a className="link-footer" href="https://bioinfo.imd.ufrn.br/index.php?page=graduateprogram#master"><p>Masters in Bioinformatics</p></a>
+                    <a className="link-footer" href="https://bioinfo.imd.ufrn.br/index.php?page=graduateprogram#doctorateDegree"><p>PhD in Bioinformatics</p></a> 
                     <p></p>                   
-                    <b><a className="link-footer" href="https://bioinfo.imd.ufrn.br/index.php?page=research"><h7 style={{color: "#F6F6F6"}}>RESEARCH</h7></a></b>
+                    <b><a className="link-footer" href="https://bioinfo.imd.ufrn.br/index.php?page=research"><p className="title-7">RESEARCH</p></a></b>
 
                 </Col>
 
+
                 <Col lg={2} sm={4} xs={6} style={{marginTop: "4em"}} className="d-flex flex-column contact-col-right justify-content-around">
-                    <b><h7 style={{color: "#F6F6F6"}}>CORE FACILITY</h7></b>
-                    <a className="link-footer" href="https://bioinfo.imd.ufrn.br/index.php?page=services"><h8>Services</h8></a>
-                    <a className="link-footer" href="https://bioinfo.imd.ufrn.br/index.php?page=tools"><h8>Tools</h8></a>
+                    <b><p className="title-7">CORE FACILITY</p></b>
+                    <a className="link-footer" href="https://bioinfo.imd.ufrn.br/index.php?page=services"><p>Services</p></a>
+                    <a className="link-footer" href="https://bioinfo.imd.ufrn.br/index.php?page=tools"><p>Tools</p></a>
                     <p></p>
-                    <b><h7 style={{color: "#F6F6F6"}}>OUTREACH</h7></b>
-                    <a className="link-footer" href="https://bioinfo.imd.ufrn.br/index.php?page=news"><h8>News & Press</h8></a>
-                    <a className="link-footer" href="https://bioinfo.imd.ufrn.br/index.php?page=events"><h8>Events</h8></a>
+                    <b><p className="title-7">OUTREACH</p></b>
+                    <a className="link-footer" href="https://bioinfo.imd.ufrn.br/index.php?page=news"><p>News & Press</p></a>
+                    <a className="link-footer" href="https://bioinfo.imd.ufrn.br/index.php?page=events"><p>Events</p></a>
                 </Col>
 
                 <Col lg={2} sm={4} xs={6} style={{marginTop: "4em"}} className="d-flex flex-column contact-col-right justify-content-around">
-                    <b><h7 style={{color: "#F6F6F6"}}>ABOUT BIOME</h7></b>
-                    <a className="link-footer" href="https://bioinfo.imd.ufrn.br/index.php?page=people"><h8>People</h8></a>
-                    <a className="link-footer" href="https://bioinfo.imd.ufrn.br/index.php?page=history"><h8>History</h8></a>
-                    <a className="link-footer" href="https://bioinfo.imd.ufrn.br/index.php?page=technicalpartnership"><h8>Technical Partnership</h8></a>
-                    <a className="link-footer" href="https://bioinfo.imd.ufrn.br/index.php?page=contact"><h8>Contact</h8></a>
+                    <b><p className="title-7">ABOUT BIOME</p></b>
+                    <a className="link-footer" href="https://bioinfo.imd.ufrn.br/index.php?page=people"><p>People</p></a>
+                    <a className="link-footer" href="https://bioinfo.imd.ufrn.br/index.php?page=history"><p>History</p></a>
+                    <a className="link-footer" href="https://bioinfo.imd.ufrn.br/index.php?page=technicalpartnership"><p>Technical Partnership</p></a>
+                    <a className="link-footer" href="https://bioinfo.imd.ufrn.br/index.php?page=contact"><p>Contact</p></a>
                 </Col>
                 <Col lg={2} ></Col>
             </Row>
@@ -81,7 +82,7 @@ export default function Footer() {
                 
                 <Row>
                     <Col md={12} sm={12} xs={12}>
-                        <center><h9>© Copyright 2020 - Todos os Direitos Reservados.</h9></center>
+                        <center><p className="title-9">© Copyright 2020 - Todos os Direitos Reservados.</p></center>
                     </Col>
                 </Row>
 

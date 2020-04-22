@@ -1,6 +1,4 @@
-import React from "react";
 import { Line } from 'recharts';
-
 
 class CustomLine extends Line {
     static defaultProps = {

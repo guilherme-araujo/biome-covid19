@@ -4,70 +4,39 @@ import { LineChart, CartesianGrid, XAxis, YAxis, ResponsiveContainer, Tooltip, L
 import CustomLine from './CustomLine';
 
 import data from './covid_norm.json';
+import country_data from './country_data.json';
 
 class TotalCasesChart extends React.Component{
-
-    
 
     constructor(props) {
         super(props);
 
-        this.countries = [
-            {
-                code: "AUS",
-                stroke: "#1f77b4",
-                name: "Australia",
-            },
-            {
-                code: "USA",
-                stroke: "#17becf",
-                name: "United States",
-            },
-            {
-                code: "CHN",
-                stroke: "#d62728",
-                name: "China",
-            },
-            {
-                code: "BRA",
-                stroke: "#2ca02c",
-                name: "Brazil",
-            },
-            {
-                code: "BEL",
-                stroke: "#ff7f0e",
-                name: "Belgium",
-            },
-            {
-                code: "IRN",
-                stroke: "#9467bd",
-                name: "Iran",
-            },
-            {
-                code: "ITA",
-                stroke: "#8c564b",
-                name: "Italy",
-            },
-            {
-                code: "ZAF",
-                stroke: "#e377c2",
-                name: "South Africa",
-            },
-            {
-                code: "ESP",
-                stroke: "#7f7f7f",
-                name: "Spain",
-            },
-            {
-                code: "GBR",
-                stroke: "#bcbd22",
-                name: "United Kingdom",
-            },
+        this.countries = country_data;
 
-        ]
+        this.state = {
+            countryList: this.countries
+        }
+    }
 
-        
-
+    selectLine(event) {
+        let updatedLines = [];
+        for (let i = 0; i < this.state.countryList.length; i++){
+            let country = this.state.countryList[i];
+            if (country.code !== event.dataKey) {
+                updatedLines.push(country)
+            } else {
+                if(/\s/.test(country.code)) {
+                    let newLine = { code: country.code.trim(), stroke: country.stroke, name: country.name }
+                    updatedLines.push(newLine);
+                } else {
+                    let newLine = { code: country.code + " ", stroke: country.stroke, name: country.name }
+                    updatedLines.push(newLine);
+                }
+            }
+        }
+        this.setState({
+            countryList : updatedLines
+        });
     }
 
     render() {
@@ -78,9 +47,7 @@ class TotalCasesChart extends React.Component{
                         margin={{ top: 25, right: 0, left: 50, bottom: 25 }}
                     >
 
-                        {this.countries.map((country, index) => (
-                            <CustomLine dataKey={ country.code } stroke={ country.stroke }  name={ country.name }/>
-                        ))}
+                        
                                                 
                         <CartesianGrid strokeDasharray="3 3" />
                         <XAxis dataKey="date" >
@@ -96,7 +63,16 @@ class TotalCasesChart extends React.Component{
                             wrapperStyle={{ paddingLeft: "20px" }} 
                             iconType="plainline"
                             iconSize={20}
+                            onClick={(e) => this.selectLine(e)}
                         />
+                        {this.state.countryList.map((country, index) => (
+                            <CustomLine 
+                                dataKey={ country.code } 
+                                stroke={ country.stroke }  
+                                name={ country.name } 
+                                key={ index } 
+                            />
+                        ))}
                         <Tooltip />
                 </LineChart>
             </ResponsiveContainer>
