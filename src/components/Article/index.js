@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 
+import TotalCases from '../TotalCases';
+
 import img01 from '../../assets/plots/0421-01.png';
 import img02 from '../../assets/plots/0421-02.png';
 import img03 from '../../assets/plots/0421-03.png';
@@ -25,8 +27,13 @@ export default function Article(props) {
                 </div>
 
                 <p>O impacto social da pandemia do COVID-19 é sem precedentes na história recente da humanidade. Tal impacto é direto no sentido que o nosso dia a dia foi alterado de forma dramática, mas também indireto já que os efeitos se prolongarão por meses ou anos devido à crise econômica que certamente afetará o mundo todo. Nesse momento, a forma como as autoridades comunicam-se com a população é crucial para um eficaz engajamento do público. Isso é ainda mais crítico em relação a como os dados epidemiológicos são mostrados. </p>
+                
+                
+                
                 <figure>
-                    <img src={img01} alt="figure 1" width={1316} height={840} className="img_article" />
+                    <TotalCases className="d-none d-lg-block" />
+                    <img src={img01} alt="figure 1" width={1316} height={840} className="img_article d-lg-none" />
+                    <i className="img_article d-lg-none">Visuzalize em uma tela maior para ter acesso à versão interativa do gráfico.</i>
                     <figcaption>Figura 1. Casos cumulativos de Covid-19 para dez países, de 1º de janeiro a 19 de abril. </figcaption>
                 </figure>
             
