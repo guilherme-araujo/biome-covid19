@@ -14,13 +14,22 @@ export default function Article(props) {
     return (
         <div className="article" >
             <div>
+
+                <div>
+                    <strong>ATUALIZAÇÃO - dia 21/04/20</strong>
+                    <br/>
+                    <br/>
+                    <i>Os gráficos foram atualizados contemplando os dados até 20/04/20. Algumas tendências anteriormente observadas são agora mais significativas. Por exemplo, os novos dados reforçam a ideia que um pico foi ultrapassado para Itália e Espanha (Figuras 2,3 e 4 para a Itália e Figuras 2 e 4 para a Espanha).  </i>
+                    <br/>
+                    <br/>
+                </div>
+
                 <p>O impacto social da pandemia do COVID-19 é sem precedentes na história recente da humanidade. Tal impacto é direto no sentido que o nosso dia a dia foi alterado de forma dramática, mas também indireto já que os efeitos se prolongarão por meses ou anos devido à crise econômica que certamente afetará o mundo todo. Nesse momento, a forma como as autoridades comunicam-se com a população é crucial para um eficaz engajamento do público. Isso é ainda mais crítico em relação a como os dados epidemiológicos são mostrados. </p>
                 <figure>
                     <img src={img01} alt="figure 1" width={1316} height={840} className="img_article" />
                     <figcaption>Figura 1. Casos cumulativos de Covid-19 para dez países, de 1º de janeiro a 19 de abril. </figcaption>
                 </figure>
-            </div>
-            <div>
+            
                 <p> Veja, por exemplo, a Figura 1, a qual é a forma mais comumente usada para mostrar a dinâmica da doença na população. Ali, o número cumulativo de casos é mostrado em função do tempo. O problema principal desse tipo de gráfico é que ele não permite conclusões sólidas a respeito da pandemia, visto que uma série de parâmetros não são contemplados (principalmente o número de testes) e ao mesmo tempo causa um impacto negativo, e muitas vezes errado, na percepção pública da pandemia. </p>
 
                 <figure>
