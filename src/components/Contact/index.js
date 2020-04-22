@@ -22,7 +22,7 @@ export default function Contact() {
 
                     </Col>
 
-                    <hr class="hr-more"/>
+                    <hr className="hr-more"/>
                 </Row>
                 </Container>
            
@@ -36,10 +36,10 @@ export default function Contact() {
                       <Row className="h-100 w-100">
                         <iframe 
                             title="biome-map"
-                            frameborder="0" 
+                            frameBorder="0" 
                             style={{border: "0", minHeight: "300px"}}
                             className="p-3 flex-fill flex-column"
-                            src={`https://www.google.com/maps/embed/v1/search?key=${Key}&q=BioME`} allowfullscreen>
+                            src={`https://www.google.com/maps/embed/v1/search?key=${Key}&q=BioME`} allowFullScreen>
                         </iframe>
                        
                       </Row>
@@ -52,7 +52,7 @@ export default function Contact() {
                     	<Row className="justify-content-center">
                             <Col lg={2}></Col>
                     		<Col lg={2} sm={2} xs={2} className="d-flex align-items-center" >
-                    			<img class="icon-contact" src={contactIcon4} alt="address" />
+                    			<img className="icon-contact" src={contactIcon4} alt="address" />
                     		</Col>
                     		<Col lg={8} sm={10} xs={10} className="d-flex flex-column contact-col-right justify-content-center">
                     			
@@ -65,7 +65,7 @@ export default function Contact() {
                     	<Row className="justify-content-center">
                             <Col lg={2}></Col>
                     		<Col  lg={2} sm={2} xs={2} className="d-flex align-items-center">
-                    			<img class="icon-contact" src={contactIcon5} alt="phone" />
+                    			<img className="icon-contact" src={contactIcon5} alt="phone" />
                     		</Col>
                     		<Col lg={8} sm={10} xs={10} className="d-flex flex-column contact-col-right justify-content-center">
                     			
@@ -77,7 +77,7 @@ export default function Contact() {
                     	<Row className="justify-content-center">
                             <Col lg={2}></Col>
                     		<Col  lg={2} sm={2} xs={2} className="d-flex align-items-center" >
-                    			<img class="icon-contact" src={contactIcon6} style={{margin: "2.3em 0"}} alt="email" />
+                    			<img className="icon-contact" src={contactIcon6} style={{margin: "2.3em 0"}} alt="email" />
                     		</Col>
                     		<Col lg={8} sm={10} xs={10} className="d-flex flex-column contact-col-right justify-content-center">
                     			
