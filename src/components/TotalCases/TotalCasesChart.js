@@ -2,6 +2,7 @@ import React from 'react';
 import { LineChart, CartesianGrid, XAxis, YAxis, ResponsiveContainer, Tooltip, Legend, Label } from 'recharts';
 
 import CustomLine from './CustomLine';
+import CustomYAxis from './CustomYAxis';
 
 import data from './covid_norm.json';
 import country_data from './country_data.json';
@@ -16,6 +17,7 @@ class TotalCasesChart extends React.Component{
         this.state = {
             countryList: this.countries
         }
+
     }
 
     selectLine(event) {
@@ -41,10 +43,13 @@ class TotalCasesChart extends React.Component{
 
     render() {
         return (
-            <ResponsiveContainer height={700}>
+            <div className="graph-container" >
+                <CustomYAxis />
+            <ResponsiveContainer height={700} width={1500} >
+                
                 <LineChart 
                         data={data}
-                        margin={{ top: 25, right: 0, left: 50, bottom: 25 }}
+                        margin={{ top: 25, right: 0, left: 0, bottom: 55 }}
                     >
 
                         
@@ -53,7 +58,7 @@ class TotalCasesChart extends React.Component{
                         <XAxis dataKey="date" >
                             <Label value="Date" position="bottom"/>
                         </XAxis>
-                        <YAxis >
+                        <YAxis hide={true}>
                             <Label value="Total Cases (cumulative)" angle={270} position="left" offset={20} />
                         </YAxis>
                         <Legend 
@@ -76,6 +81,7 @@ class TotalCasesChart extends React.Component{
                         <Tooltip />
                 </LineChart>
             </ResponsiveContainer>
+            </div>
         )
     }
     
