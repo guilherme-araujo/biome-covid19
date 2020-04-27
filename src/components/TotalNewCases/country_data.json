@@ -1,0 +1,53 @@
+[
+    {
+        "code": "AUS",
+        "stroke": "#1f77b4",
+        "name": "Australia"
+    },
+    {
+        "code": "USA",
+        "stroke": "#17becf",
+        "name": "United States"
+    },
+    {
+        "code": "CHN",
+        "stroke": "#d62728",
+        "name": "China"
+    },
+    {
+        "code": "BRA",
+        "stroke": "#2ca02c",
+        "name": "Brazil"
+    },
+    {
+        "code": "BEL",
+        "stroke": "#ff7f0e",
+        "name": "Belgium"
+    },
+    {
+        "code": "IRN",
+        "stroke": "#9467bd",
+        "name": "Iran"
+    },
+    {
+        "code": "ITA",
+        "stroke": "#8c564b",
+        "name": "Italy"
+    },
+    {
+        "code": "ZAF",
+        "stroke": "#e377c2",
+        "name": "South Africa"
+    },
+    {
+        "code": "ESP",
+        "stroke": "#7f7f7f",
+        "name": "Spain"
+    },
+    {
+        "code": "GBR",
+        "stroke": "#bcbd22",
+        "name": "United Kingdom"
+    }
+
+]

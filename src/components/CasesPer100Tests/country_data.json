@@ -1,0 +1,40 @@
+[
+    {        
+        "stroke": "#1f77b4",
+        "name": "USA",
+        "slice": 12,
+        "interval": 4
+    },
+    
+    {        
+        "stroke": "#ff7f0e",
+        "name": "Italy",
+        "slice": 2,
+        "interval": 5
+    },
+    {        
+        "stroke": "#6cbc6c",
+        "name": "South Korea",
+        "slice": 2,
+        "interval": 5
+    },
+    {        
+        "stroke": "#d62728",
+        "name": "UK",
+        "slice": 2,
+        "interval": 5
+    },
+    {
+        "stroke" : "#410f6e",
+        "name": "Netherlands",
+        "slice": 35,
+        "interval": 2
+    },
+    {        
+        "stroke": "#8c564b",
+        "name": "Belgium",
+        "slice": 7,
+        "interval" : 5
+    }
+
+]

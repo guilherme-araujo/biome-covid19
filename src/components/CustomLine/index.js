@@ -6,6 +6,7 @@ class CustomLine extends Line {
         // Customized props
         strokeWidth: 2,
         dot: false,
+        isAnimationActive: false
     };
 
     

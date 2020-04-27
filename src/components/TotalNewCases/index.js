@@ -1,13 +1,13 @@
 import React from "react";
 import { Container } from 'react-bootstrap';
 
-import TotalCasesChart from './TotalCasesChart';
+import TotalNewCasesChart from './TotalNewCasesChart';
 
-export default function TotalCases(props) {
+export default function TotalNewCases(props) {
     
     return (
         <Container className={props.className} >
-            <TotalCasesChart/>
+            <TotalNewCasesChart/>
 
         </Container>
     )

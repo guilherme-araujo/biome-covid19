@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from 'react-router-dom';
 
 import TotalCases from '../TotalCases';
+import TotalNewCases from '../TotalNewCases';
+import CasesPer100Tests from '../CasesPer100Tests';
 
 import img01 from '../../assets/plots/0421-01.png';
 import img02 from '../../assets/plots/0421-02.png';
@@ -33,6 +35,8 @@ export default function Article(props) {
                 <figure>
                     <TotalCases className="d-none d-lg-block" />
                     <img src={img01} alt="figure 1" width={1316} height={840} className="img_article d-lg-none" />
+
+                    <i className=" d-none d-lg-block">Clique na legenda para mostrar/ocultar os dados do país</i>
                     <i className="img_article d-lg-none">Visuzalize em uma tela maior para ter acesso à versão interativa do gráfico.</i>
                     <figcaption>Figura 1. Casos cumulativos de Covid-19 para dez países, de 1º de janeiro a 19 de abril. </figcaption>
                 </figure>
@@ -40,14 +44,19 @@ export default function Article(props) {
                 <p> Veja, por exemplo, a Figura 1, a qual é a forma mais comumente usada para mostrar a dinâmica da doença na população. Ali, o número cumulativo de casos é mostrado em função do tempo. O problema principal desse tipo de gráfico é que ele não permite conclusões sólidas a respeito da pandemia, visto que uma série de parâmetros não são contemplados (principalmente o número de testes) e ao mesmo tempo causa um impacto negativo, e muitas vezes errado, na percepção pública da pandemia. </p>
 
                 <figure>
-                    <img src={img02} alt="figure 2" width={1347} height={744} className="img_article" />
+                    <TotalNewCases className="d-none d-lg-block" />
+                    <img src={img02} alt="figure 2" width={1347} height={744} className="img_article d-lg-none" />
+                    <i className=" d-none d-lg-block">Clique na legenda para mostrar/ocultar os dados do país</i>
+                    <i className="img_article d-lg-none">Visuzalize em uma tela maior para ter acesso à versão interativa do gráfico.</i>
                     <figcaption>Figura 2. Novos casos diários de Covid-19 pelo número total de casos, ambos em escala logarítmica.</figcaption>
                 </figure>
 
                 <p> Uma forma mais correta é o tipo de gráfico mostrado na Figura 2. Ali, o número de novos casos (eixo Y em escala logarítmica) é plotado contra o número total de casos (eixo X em escala logarítmica). Em uma pandemia que está passando por uma fase de crescimento exponencial, espera-se uma linha diagonal, como pode ser mostrado para os dados da doença no Brasil e nos EUA. Na China, onde a doença está aparentemente controlada, os dados mostram claramente que o número de novos casos é perto de zero (com a consequente curva descendente). Há, porém, problemas com esse gráfico. O mais sério é que o tempo não está contemplado, exceto nos casos onde uma animação está presente.</p>
 
                 <figure>
-                    <img src={img03} alt="figure 3" width={1822} height={1273} className="img_article" />
+                    <CasesPer100Tests className="d-none d-lg-block" />
+                    <img src={img03} alt="figure 3" width={1822} height={1273} className="img_article d-lg-none" />
+                    <i className="img_article d-lg-none">Visuzalize em uma tela maior para ter acesso à versão interativa do gráfico.</i>
                     <figcaption>Figura 3. Casos normalizados de Covid-19 (casos por 100 testes) para seis países, de 15 de fevereiro a 19 de abril.</figcaption>
                 </figure>
 

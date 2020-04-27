@@ -3,10 +3,10 @@ import { LineChart, CartesianGrid, XAxis, YAxis, ResponsiveContainer, Tooltip, L
 
 import CustomLine from '../CustomLine';
 
-import data from './covid_norm.json';
+import data from './covid_norm-plot2.json';
 import country_data from './country_data.json';
 
-class TotalCasesChart extends React.Component{
+class TotalNewCasesChart extends React.Component{
 
     constructor(props) {
         super(props);
@@ -46,17 +46,17 @@ class TotalCasesChart extends React.Component{
                 
                 <LineChart 
                         data={data}
-                        margin={{ top: 25, right: 0, left: 30, bottom: 25 }}
+                        margin={{ top: 25, right: 0, left: 30, bottom: 55 }}
                     >
 
                         
                                                 
                         <CartesianGrid strokeDasharray="3 3" />
-                        <XAxis dataKey="date" >
-                            <Label value="Date" position="bottom"/>
+                        <XAxis dataKey="cumulative" domain={[1, 'auto']} scale="log" allowDataOverflow>
+                            <Label value="Total Cases (log scale)" position="bottom"/>
                         </XAxis>
-                        <YAxis>
-                            <Label value="Total Cases (cumulative)" angle={270} position="left" offset={20} />
+                        <YAxis domain={[1, 'auto']} allowDataOverflow scale="log" >
+                            <Label value="New cases (log scale)" angle={270} position="left" offset={0} />
                         </YAxis>
                         <Legend 
                             align="right" 
@@ -69,6 +69,7 @@ class TotalCasesChart extends React.Component{
                         />
                         {this.state.countryList.map((country, index) => (
                             <CustomLine 
+                                connectNulls={true}
                                 dataKey={ country.code } 
                                 stroke={ country.stroke }  
                                 name={ country.name } 
@@ -84,4 +85,4 @@ class TotalCasesChart extends React.Component{
     
 }
 
-export default TotalCasesChart;
+export default TotalNewCasesChart;
