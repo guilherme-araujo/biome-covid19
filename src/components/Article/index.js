@@ -57,10 +57,19 @@ export default function Article(props) {
             <div>
 
                 <div>
-                    <strong>ATUALIZAÇÃO - dia 26/04/20</strong>
+                    <strong>ATUALIZAÇÃO - dia 27/04/20</strong>
                     <br/>
                     <br/>
-                    <i>Os gráficos foram atualizados contemplando os dados até 26/04/20. Algumas tendências anteriormente observadas são agora mais significativas. Por exemplo, os novos dados reforçam a ideia que um pico foi ultrapassado para Itália e Espanha (Figuras 2,3 e 4 para a Itália e Figuras 2 e 4 para a Espanha).  </i>
+                    <i>Os gráficos foram atualizados contemplando os dados até 26/04/20. As tendências vistas na última atualização foram confirmadas. As taxas para Itália e Espanha continuaram uma trajetória descendente (Figuras 2, 3 e 4). Observa-se também o mesmo padrão para UK, Estados Unidos e Iran.</i>
+                    <br/>
+                    <br/>
+                </div>
+
+                <div>
+                    <strong>ATUALIZAÇÃO - dia 20/04/20</strong>
+                    <br/>
+                    <br/>
+                    <i>Os gráficos foram atualizados contemplando os dados até 20/04/20. Algumas tendências anteriormente observadas são agora mais significativas. Por exemplo, os novos dados reforçam a ideia que um pico foi ultrapassado para Itália e Espanha (Figuras 2, 3 e 4 para a Itália e Figuras 2 e 4 para a Espanha).  </i>
                     <br/>
                     <br/>
                 </div>
