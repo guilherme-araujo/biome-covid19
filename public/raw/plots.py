@@ -8,9 +8,9 @@ import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 import matplotlib as mpl
 
-covid_norm = pd.read_csv('covid-normalizado-2020-04-21-2.csv', decimal=',')
-covid_norm2 = pd.read_csv('cumulativo-2020-04-21.csv')
-covid_deaths = pd.read_csv('deaths-2020-04-21.csv')
+covid_norm = pd.read_csv('covid-normalizado-2020-04-26.csv', decimal=',')
+covid_norm2 = pd.read_csv('cumulativo-2020-04-26.csv')
+covid_deaths = pd.read_csv('deaths-2020-04-26.csv')
 
 covid_norm2['date'] = pd.to_datetime(covid_norm2['date'], errors='coerce', format='%d/%m/%Y')
 covid_norm['date'] = pd.to_datetime(covid_norm['date'], errors='coerce', format='%d/%m/%Y')
@@ -21,7 +21,7 @@ covid_deaths['daily'] = covid_deaths['daily'].replace({0: np.nan})
 
 
 #sns.set(style="ticks", rc={"lines.linewidth": 0.9})
-version_str = '0421'
+version_str = '0426'
 
 
 fig_dims = (6, 4)
@@ -38,7 +38,7 @@ g.legend(loc='center right', bbox_to_anchor=(1.5, 0.5), ncol=1)
 
 #ax.xaxis.set_major_locator(mdates.AutoDateLocator(minticks=20))
 ax.set_xlim(covid_norm2['date'].min(), covid_norm2['date'].max())
-ax.xaxis.set_major_locator(mdates.WeekdayLocator(byweekday=2) )
+ax.xaxis.set_major_locator(mdates.WeekdayLocator(byweekday=6) )
 ax.xaxis.set_major_formatter(mdates.DateFormatter('%m-%d'))
 ax.yaxis.set_major_formatter(mpl.ticker.StrMethodFormatter('{x:,.0f}'))
 ax.set(xlabel="Date", ylabel="Total Cases (cumulative)" )
@@ -50,7 +50,7 @@ plt.savefig(version_str+"-01.png", dpi=200, bbox_inches = "tight")'''
 
 
 #-----FIGURA 2-----
-
+'''
 g = sns.lineplot(data=covid_norm2, x="cumulative", y="confirmed", hue="country", estimator=None)
 ax.set(xscale="log", yscale="log")
 ax.set(xlabel="Total cases (log scale)", ylabel="New Cases (log scale)" )
@@ -60,7 +60,7 @@ g.set_position([box.x0, box.y0, box.width * 0.9, box.height])
 g.legend(loc='center right', bbox_to_anchor=(1.45, 0.5), ncol=1)
 
 #plt.show()
-plt.savefig(version_str+"-02.png", dpi=200, bbox_inches = "tight")
+plt.savefig(version_str+"-02.png", dpi=200, bbox_inches = "tight")'''
 
 '''
 #-----FIGURA 3-----
@@ -117,7 +117,7 @@ plt.subplots_adjust(left=0.075, right=1.0, top=1.0, bottom=0.13)
 
 plt.savefig(version_str+"-03.png", dpi=200, bbox_inches = "tight")'''
 
-'''
+
 # -----FIGURA 4------
 #fig, ax = plt.subplots()
 
@@ -161,4 +161,4 @@ g.fig.text(x=0.5, y=0.01,
 #ax.set(xscale="log", yscale="log")
 
 #plt.show()
-plt.savefig(version_str+"-04.png", dpi=200, bbox_inches = "tight")'''
+plt.savefig(version_str+"-04.png", dpi=200, bbox_inches = "tight")

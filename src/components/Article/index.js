@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 
-import img01 from '../../assets/plots/0421-01.png';
-import img02 from '../../assets/plots/0421-02.png';
-import img03 from '../../assets/plots/0421-03.png';
-import img04 from '../../assets/plots/0421-04.png';
+import img01 from '../../assets/plots/0426-01.png';
+import img02 from '../../assets/plots/0426-02.png';
+import img03 from '../../assets/plots/0426-03.png';
+import img04 from '../../assets/plots/0426-04.png';
 import article_pdf from '../../assets/MedRvix_covid_figs.pdf';
 
 
@@ -16,10 +16,10 @@ export default function Article(props) {
             <div>
 
                 <div>
-                    <strong>ATUALIZAÇÃO - dia 21/04/20</strong>
+                    <strong>ATUALIZAÇÃO - dia 26/04/20</strong>
                     <br/>
                     <br/>
-                    <i>Os gráficos foram atualizados contemplando os dados até 20/04/20. Algumas tendências anteriormente observadas são agora mais significativas. Por exemplo, os novos dados reforçam a ideia que um pico foi ultrapassado para Itália e Espanha (Figuras 2,3 e 4 para a Itália e Figuras 2 e 4 para a Espanha).  </i>
+                    <i>Os gráficos foram atualizados contemplando os dados até 26/04/20. Algumas tendências anteriormente observadas são agora mais significativas. Por exemplo, os novos dados reforçam a ideia que um pico foi ultrapassado para Itália e Espanha (Figuras 2,3 e 4 para a Itália e Figuras 2 e 4 para a Espanha).  </i>
                     <br/>
                     <br/>
                 </div>
