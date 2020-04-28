@@ -6,6 +6,8 @@ import CustomLine from '../CustomLine';
 import data from './covid_norm-plot3.json';
 import country_data from './country_data.json';
 
+import './styles.css'
+
 class CustomizedAxisTick extends PureComponent {
     render() {
       const {
@@ -37,7 +39,10 @@ class CasesPer100TestsChart extends React.Component{
     //{this.countries.map((country, index) => (
     render() {
         return (
+            
+            
             <div className="d-flex flex-wrap mt-3">
+                
                 { this.state.countryList.map( (country, index) => (              
                                     
                          

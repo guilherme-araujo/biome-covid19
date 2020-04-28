@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import TotalCases from '../TotalCases';
 import TotalNewCases from '../TotalNewCases';
 import CasesPer100Tests from '../CasesPer100Tests';
+import Deaths from '../Deaths';
 
 import img01 from '../../assets/plots/0421-01.png';
 import img02 from '../../assets/plots/0421-02.png';
@@ -37,7 +38,7 @@ export default function Article(props) {
                     <img src={img01} alt="figure 1" width={1316} height={840} className="img_article d-lg-none" />
 
                     <i className=" d-none d-lg-block">Clique na legenda para mostrar/ocultar os dados do país</i>
-                    <i className="img_article d-lg-none">Visuzalize em uma tela maior para ter acesso à versão interativa do gráfico.</i>
+                    <i className="img_article d-lg-none">Acesse em uma tela maior para ter acesso à versão interativa do gráfico.</i>
                     <figcaption>Figura 1. Casos cumulativos de Covid-19 para dez países, de 1º de janeiro a 19 de abril. </figcaption>
                 </figure>
             
@@ -47,7 +48,7 @@ export default function Article(props) {
                     <TotalNewCases className="d-none d-lg-block" />
                     <img src={img02} alt="figure 2" width={1347} height={744} className="img_article d-lg-none" />
                     <i className=" d-none d-lg-block">Clique na legenda para mostrar/ocultar os dados do país</i>
-                    <i className="img_article d-lg-none">Visuzalize em uma tela maior para ter acesso à versão interativa do gráfico.</i>
+                    <i className="img_article d-lg-none">Acesse em uma tela maior para ter acesso à versão interativa do gráfico.</i>
                     <figcaption>Figura 2. Novos casos diários de Covid-19 pelo número total de casos, ambos em escala logarítmica.</figcaption>
                 </figure>
 
@@ -56,14 +57,16 @@ export default function Article(props) {
                 <figure>
                     <CasesPer100Tests className="d-none d-lg-block" />
                     <img src={img03} alt="figure 3" width={1822} height={1273} className="img_article d-lg-none" />
-                    <i className="img_article d-lg-none">Visuzalize em uma tela maior para ter acesso à versão interativa do gráfico.</i>
+                    <i className="img_article d-lg-none">Acesse em uma tela maior para ter acesso à versão interativa do gráfico.</i>
                     <figcaption>Figura 3. Casos normalizados de Covid-19 (casos por 100 testes) para seis países, de 15 de fevereiro a 19 de abril.</figcaption>
                 </figure>
 
                 <p>No entanto, acreditamos que a forma mais correta de mostrar os dados epidemiológicos de uma pandemia como a COVID-19 é a mostrada na Figura 3. Ali, o número de casos é normalizado pelo número de testes executados (e consequentemente mostrado como o número de casos positivos em 100 testes). O gráfico da Figura 3 permite uma análise mais criteriosa e fidedigna da dinâmica do vírus nas populações mostradas. Por exemplo, a curva para a Itália mostra que um pico de casos positivos (normalizados para 100 testes) foi atingido por volta de 18 de março e desde então o número normalizado de casos vem caindo de forma significativa. Observem a curva para os EUA. Lá, há um pico no início de março seguido de uma queda no meio de março e um novo pico desde o final de março. Para países de dimensões continentais como os EUA, se espera que haja várias ondas epidêmicas. O primeiro pico provavelmente corresponde aos primeiros casos na costa oeste americana enquanto o segundo pico envolve os casos mais recentes na costa leste, principalmente Nova York. O principal problema do gráfico mostrado na Figura 3 é a ausência de dados confiáveis sobre o número de testes para maioria dos países. Outro problema é a falta de critérios homogêneos para decidir quem será testado. </p>
 
                 <figure>
-                    <img src={img04} alt="figure 4" width={1791} height={1798} className="img_article" />
+                    <Deaths className="d-none d-lg-block" />
+                    <img src={img04} alt="figure 4" width={1791} height={1798} className="img_article d-lg-none" />
+                    <i className="img_article d-lg-none">Acesse em uma tela maior para ter acesso à versão interativa do gráfico.</i>
                     <figcaption>Figura 4. Mortes diárias de Covid-19 pelo número total de mortes, ambas em escala logarítmica.</figcaption>
                 </figure>
 

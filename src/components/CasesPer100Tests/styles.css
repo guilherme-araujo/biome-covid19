@@ -1,0 +1,6 @@
+.left-label {
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
+    margin: 0px;
+}
+
