@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 
 #covid_norm2 = pd.read_csv('covid_norm2.csv')
-covid_norm2 = pd.read_csv('cumulativo-2020-04-21.csv')
+covid_norm2 = pd.read_csv('cumulativo-2020-04-26.csv')
 covid_norm2['date'] = pd.to_datetime(covid_norm2['date'], errors='coerce', format='%d/%m/%Y')
 
 sorted_dates = covid_norm2["date"].unique()

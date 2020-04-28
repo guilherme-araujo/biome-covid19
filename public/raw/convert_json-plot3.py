@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 
 #covid_norm2 = pd.read_csv('covid_norm2.csv')
-covid_norm2 = pd.read_csv('covid-normalizado-2020-04-21-2.csv', decimal=',')
+covid_norm2 = pd.read_csv('covid-normalizado-2020-04-26.csv', decimal=',')
 covid_norm2['date'] = pd.to_datetime(covid_norm2['date'], errors='coerce', format='%d/%m/%Y')
 
 sorted_dates = covid_norm2["date"].unique()
@@ -29,9 +29,6 @@ for date in sorted_dates:
 
     for country in countries:
         media3 = this_date.loc[this_date["country"]==country,"media3days"]
-        print(list(media3))
-        print(this_date)
-        print(country)
         if not media3.empty:
             country_media3 = float(list(media3)[0])
         else:

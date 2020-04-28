@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 
 #covid_norm2 = pd.read_csv('covid_norm2.csv')
-covid_norm2 = pd.read_csv('cumulativo-2020-04-21.csv')
+covid_norm2 = pd.read_csv('cumulativo-2020-04-26.csv')
 sorted_cumulative = covid_norm2["cumulative"].unique()
 sorted_cumulative.sort()
 countries = covid_norm2["code"].unique()

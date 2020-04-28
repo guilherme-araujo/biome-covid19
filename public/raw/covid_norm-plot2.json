@@ -923,19 +923,6 @@
         "USA":null
     },
     {
-        "cumulative":205,
-        "AUS":null,
-        "BEL":null,
-        "BRA":null,
-        "CHN":null,
-        "IRN":null,
-        "ITA":null,
-        "ZAF":55.0,
-        "ESP":null,
-        "GBR":null,
-        "USA":null
-    },
-    {
         "cumulative":206,
         "AUS":null,
         "BEL":null,
@@ -1027,19 +1014,6 @@
         "USA":null
     },
     {
-        "cumulative":240,
-        "AUS":null,
-        "BEL":null,
-        "BRA":null,
-        "CHN":null,
-        "IRN":null,
-        "ITA":null,
-        "ZAF":35.0,
-        "ESP":null,
-        "GBR":null,
-        "USA":null
-    },
-    {
         "cumulative":245,
         "AUS":null,
         "BEL":null,
@@ -1102,19 +1076,6 @@
         "ZAF":null,
         "ESP":null,
         "GBR":67.0,
-        "USA":null
-    },
-    {
-        "cumulative":274,
-        "AUS":null,
-        "BEL":null,
-        "BRA":null,
-        "CHN":null,
-        "IRN":null,
-        "ITA":null,
-        "ZAF":34.0,
-        "ESP":null,
-        "GBR":null,
         "USA":null
     },
     {
@@ -1287,19 +1248,6 @@
         "USA":null
     },
     {
-        "cumulative":402,
-        "AUS":null,
-        "BEL":null,
-        "BRA":null,
-        "CHN":null,
-        "IRN":null,
-        "ITA":null,
-        "ZAF":128.0,
-        "ESP":null,
-        "GBR":null,
-        "USA":null
-    },
-    {
         "cumulative":428,
         "AUS":null,
         "BEL":null,
@@ -1389,19 +1337,6 @@
         "ESP":null,
         "GBR":null,
         "USA":121.0
-    },
-    {
-        "cumulative":557,
-        "AUS":null,
-        "BEL":null,
-        "BRA":null,
-        "CHN":null,
-        "IRN":null,
-        "ITA":null,
-        "ZAF":155.0,
-        "ESP":null,
-        "GBR":null,
-        "USA":null
     },
     {
         "cumulative":559,
@@ -1541,7 +1476,7 @@
         "CHN":null,
         "IRN":null,
         "ITA":null,
-        "ZAF":152.0,
+        "ZAF":null,
         "ESP":null,
         "GBR":null,
         "USA":null
@@ -2522,6 +2457,19 @@
         "USA":null
     },
     {
+        "cumulative":3300,
+        "AUS":null,
+        "BEL":null,
+        "BRA":null,
+        "CHN":null,
+        "IRN":null,
+        "ITA":null,
+        "ZAF":142.0,
+        "ESP":null,
+        "GBR":null,
+        "USA":null
+    },
+    {
         "cumulative":3378,
         "AUS":212.0,
         "BEL":null,
@@ -2561,6 +2509,19 @@
         "USA":null
     },
     {
+        "cumulative":3465,
+        "AUS":null,
+        "BEL":null,
+        "BRA":null,
+        "CHN":null,
+        "IRN":null,
+        "ITA":null,
+        "ZAF":165.0,
+        "ESP":null,
+        "GBR":null,
+        "USA":null
+    },
+    {
         "cumulative":3513,
         "AUS":null,
         "BEL":null,
@@ -2569,6 +2530,19 @@
         "IRN":591.0,
         "ITA":null,
         "ZAF":null,
+        "ESP":null,
+        "GBR":null,
+        "USA":null
+    },
+    {
+        "cumulative":3635,
+        "AUS":null,
+        "BEL":null,
+        "BRA":null,
+        "CHN":null,
+        "IRN":null,
+        "ITA":null,
+        "ZAF":170.0,
         "ESP":null,
         "GBR":null,
         "USA":null
@@ -2639,6 +2613,19 @@
         "USA":null
     },
     {
+        "cumulative":3953,
+        "AUS":null,
+        "BEL":null,
+        "BRA":null,
+        "CHN":null,
+        "IRN":null,
+        "ITA":null,
+        "ZAF":318.0,
+        "ESP":null,
+        "GBR":null,
+        "USA":null
+    },
+    {
         "cumulative":3983,
         "AUS":null,
         "BEL":null,
@@ -2660,6 +2647,19 @@
         "IRN":null,
         "ITA":null,
         "ZAF":null,
+        "ESP":null,
+        "GBR":null,
+        "USA":null
+    },
+    {
+        "cumulative":4220,
+        "AUS":null,
+        "BEL":null,
+        "BRA":null,
+        "CHN":null,
+        "IRN":null,
+        "ITA":null,
+        "ZAF":267.0,
         "ESP":null,
         "GBR":null,
         "USA":null
@@ -2699,6 +2699,19 @@
         "IRN":null,
         "ITA":null,
         "ZAF":null,
+        "ESP":null,
+        "GBR":null,
+        "USA":null
+    },
+    {
+        "cumulative":4361,
+        "AUS":null,
+        "BEL":null,
+        "BRA":null,
+        "CHN":null,
+        "IRN":null,
+        "ITA":null,
+        "ZAF":141.0,
         "ESP":null,
         "GBR":null,
         "USA":null
@@ -3185,6 +3198,32 @@
         "USA":null
     },
     {
+        "cumulative":6625,
+        "AUS":13.0,
+        "BEL":null,
+        "BRA":null,
+        "CHN":null,
+        "IRN":null,
+        "ITA":null,
+        "ZAF":null,
+        "ESP":null,
+        "GBR":null,
+        "USA":null
+    },
+    {
+        "cumulative":6647,
+        "AUS":22.0,
+        "BEL":null,
+        "BRA":null,
+        "CHN":null,
+        "IRN":null,
+        "ITA":null,
+        "ZAF":null,
+        "ESP":null,
+        "GBR":null,
+        "USA":null
+    },
+    {
         "cumulative":6650,
         "AUS":null,
         "BEL":null,
@@ -3195,6 +3234,58 @@
         "ZAF":null,
         "ESP":null,
         "GBR":967.0,
+        "USA":null
+    },
+    {
+        "cumulative":6654,
+        "AUS":7.0,
+        "BEL":null,
+        "BRA":null,
+        "CHN":null,
+        "IRN":null,
+        "ITA":null,
+        "ZAF":null,
+        "ESP":null,
+        "GBR":null,
+        "USA":null
+    },
+    {
+        "cumulative":6667,
+        "AUS":13.0,
+        "BEL":null,
+        "BRA":null,
+        "CHN":null,
+        "IRN":null,
+        "ITA":null,
+        "ZAF":null,
+        "ESP":null,
+        "GBR":null,
+        "USA":null
+    },
+    {
+        "cumulative":6687,
+        "AUS":20.0,
+        "BEL":null,
+        "BRA":null,
+        "CHN":null,
+        "IRN":null,
+        "ITA":null,
+        "ZAF":null,
+        "ESP":null,
+        "GBR":null,
+        "USA":null
+    },
+    {
+        "cumulative":6703,
+        "AUS":16.0,
+        "BEL":null,
+        "BRA":null,
+        "CHN":null,
+        "IRN":null,
+        "ITA":null,
+        "ZAF":null,
+        "ESP":null,
+        "GBR":null,
         "USA":null
     },
     {
@@ -4654,11 +4745,50 @@
         "USA":null
     },
     {
+        "cumulative":39983,
+        "AUS":null,
+        "BEL":1487.0,
+        "BRA":null,
+        "CHN":null,
+        "IRN":null,
+        "ITA":null,
+        "ZAF":null,
+        "ESP":null,
+        "GBR":null,
+        "USA":null
+    },
+    {
         "cumulative":40206,
         "AUS":null,
         "BEL":null,
         "BRA":null,
         "CHN":2974.0,
+        "IRN":null,
+        "ITA":null,
+        "ZAF":null,
+        "ESP":null,
+        "GBR":null,
+        "USA":null
+    },
+    {
+        "cumulative":40581,
+        "AUS":null,
+        "BEL":null,
+        "BRA":1927.0,
+        "CHN":null,
+        "IRN":null,
+        "ITA":null,
+        "ZAF":null,
+        "ESP":null,
+        "GBR":null,
+        "USA":null
+    },
+    {
+        "cumulative":40956,
+        "AUS":null,
+        "BEL":973.0,
+        "BRA":null,
+        "CHN":null,
         "IRN":null,
         "ITA":null,
         "ZAF":null,
@@ -4693,6 +4823,19 @@
         "USA":null
     },
     {
+        "cumulative":41889,
+        "AUS":null,
+        "BEL":933.0,
+        "BRA":null,
+        "CHN":null,
+        "IRN":null,
+        "ITA":null,
+        "ZAF":null,
+        "ESP":null,
+        "GBR":null,
+        "USA":null
+    },
+    {
         "cumulative":41903,
         "AUS":null,
         "BEL":null,
@@ -4719,6 +4862,45 @@
         "USA":null
     },
     {
+        "cumulative":42797,
+        "AUS":null,
+        "BEL":908.0,
+        "BRA":null,
+        "CHN":null,
+        "IRN":null,
+        "ITA":null,
+        "ZAF":null,
+        "ESP":null,
+        "GBR":null,
+        "USA":null
+    },
+    {
+        "cumulative":43079,
+        "AUS":null,
+        "BEL":null,
+        "BRA":2498.0,
+        "CHN":null,
+        "IRN":null,
+        "ITA":null,
+        "ZAF":null,
+        "ESP":null,
+        "GBR":null,
+        "USA":null
+    },
+    {
+        "cumulative":44293,
+        "AUS":null,
+        "BEL":1496.0,
+        "BRA":null,
+        "CHN":null,
+        "IRN":null,
+        "ITA":null,
+        "ZAF":null,
+        "ESP":null,
+        "GBR":null,
+        "USA":null
+    },
+    {
         "cumulative":44606,
         "AUS":null,
         "BEL":null,
@@ -4737,6 +4919,32 @@
         "BEL":null,
         "BRA":null,
         "CHN":2028.0,
+        "IRN":null,
+        "ITA":null,
+        "ZAF":null,
+        "ESP":null,
+        "GBR":null,
+        "USA":null
+    },
+    {
+        "cumulative":45325,
+        "AUS":null,
+        "BEL":1032.0,
+        "BRA":null,
+        "CHN":null,
+        "IRN":null,
+        "ITA":null,
+        "ZAF":null,
+        "ESP":null,
+        "GBR":null,
+        "USA":null
+    },
+    {
+        "cumulative":45757,
+        "AUS":null,
+        "BEL":null,
+        "BRA":2678.0,
+        "CHN":null,
         "IRN":null,
         "ITA":null,
         "ZAF":null,
@@ -4810,6 +5018,19 @@
         "USA":null
     },
     {
+        "cumulative":49492,
+        "AUS":null,
+        "BEL":null,
+        "BRA":3735.0,
+        "CHN":null,
+        "IRN":null,
+        "ITA":null,
+        "ZAF":null,
+        "ESP":null,
+        "GBR":null,
+        "USA":null
+    },
+    {
         "cumulative":50468,
         "AUS":null,
         "BEL":null,
@@ -4833,6 +5054,19 @@
         "ZAF":null,
         "ESP":null,
         "GBR":3802.0,
+        "USA":null
+    },
+    {
+        "cumulative":52995,
+        "AUS":null,
+        "BEL":null,
+        "BRA":3503.0,
+        "CHN":null,
+        "IRN":null,
+        "ITA":null,
+        "ZAF":null,
+        "ESP":null,
+        "GBR":null,
         "USA":null
     },
     {
@@ -4907,6 +5141,19 @@
         "BRA":null,
         "CHN":null,
         "IRN":2483.0,
+        "ITA":null,
+        "ZAF":null,
+        "ESP":null,
+        "GBR":null,
+        "USA":null
+    },
+    {
+        "cumulative":58509,
+        "AUS":null,
+        "BEL":null,
+        "BRA":5514.0,
+        "CHN":null,
+        "IRN":null,
         "ITA":null,
         "ZAF":null,
         "ESP":null,
@@ -6097,6 +6344,19 @@
         "USA":null
     },
     {
+        "cumulative":83505,
+        "AUS":null,
+        "BEL":null,
+        "BRA":null,
+        "CHN":null,
+        "IRN":1294.0,
+        "ITA":null,
+        "ZAF":null,
+        "ESP":null,
+        "GBR":null,
+        "USA":null
+    },
+    {
         "cumulative":83754,
         "AUS":null,
         "BEL":null,
@@ -6149,6 +6409,84 @@
         "USA":null
     },
     {
+        "cumulative":83849,
+        "AUS":null,
+        "BEL":null,
+        "BRA":null,
+        "CHN":32.0,
+        "IRN":null,
+        "ITA":null,
+        "ZAF":null,
+        "ESP":null,
+        "GBR":null,
+        "USA":null
+    },
+    {
+        "cumulative":83864,
+        "AUS":null,
+        "BEL":null,
+        "BRA":null,
+        "CHN":15.0,
+        "IRN":null,
+        "ITA":null,
+        "ZAF":null,
+        "ESP":null,
+        "GBR":null,
+        "USA":null
+    },
+    {
+        "cumulative":83876,
+        "AUS":null,
+        "BEL":null,
+        "BRA":null,
+        "CHN":12.0,
+        "IRN":null,
+        "ITA":null,
+        "ZAF":null,
+        "ESP":null,
+        "GBR":null,
+        "USA":null
+    },
+    {
+        "cumulative":83884,
+        "AUS":null,
+        "BEL":null,
+        "BRA":null,
+        "CHN":8.0,
+        "IRN":null,
+        "ITA":null,
+        "ZAF":null,
+        "ESP":null,
+        "GBR":null,
+        "USA":null
+    },
+    {
+        "cumulative":83899,
+        "AUS":null,
+        "BEL":null,
+        "BRA":null,
+        "CHN":15.0,
+        "IRN":null,
+        "ITA":null,
+        "ZAF":null,
+        "ESP":null,
+        "GBR":null,
+        "USA":null
+    },
+    {
+        "cumulative":83909,
+        "AUS":null,
+        "BEL":null,
+        "BRA":null,
+        "CHN":10.0,
+        "IRN":null,
+        "ITA":null,
+        "ZAF":null,
+        "ESP":null,
+        "GBR":null,
+        "USA":null
+    },
+    {
         "cumulative":84279,
         "AUS":null,
         "BEL":null,
@@ -6159,6 +6497,19 @@
         "ZAF":null,
         "ESP":null,
         "GBR":5288.0,
+        "USA":null
+    },
+    {
+        "cumulative":84802,
+        "AUS":null,
+        "BEL":null,
+        "BRA":null,
+        "CHN":null,
+        "IRN":1297.0,
+        "ITA":null,
+        "ZAF":null,
+        "ESP":null,
+        "GBR":null,
         "USA":null
     },
     {
@@ -6188,6 +6539,19 @@
         "USA":16797.0
     },
     {
+        "cumulative":85996,
+        "AUS":null,
+        "BEL":null,
+        "BRA":null,
+        "CHN":null,
+        "IRN":1194.0,
+        "ITA":null,
+        "ZAF":null,
+        "ESP":null,
+        "GBR":null,
+        "USA":null
+    },
+    {
         "cumulative":86498,
         "AUS":null,
         "BEL":null,
@@ -6195,6 +6559,32 @@
         "CHN":null,
         "IRN":null,
         "ITA":5959.0,
+        "ZAF":null,
+        "ESP":null,
+        "GBR":null,
+        "USA":null
+    },
+    {
+        "cumulative":87026,
+        "AUS":null,
+        "BEL":null,
+        "BRA":null,
+        "CHN":null,
+        "IRN":1030.0,
+        "ITA":null,
+        "ZAF":null,
+        "ESP":null,
+        "GBR":null,
+        "USA":null
+    },
+    {
+        "cumulative":88194,
+        "AUS":null,
+        "BEL":null,
+        "BRA":null,
+        "CHN":null,
+        "IRN":1168.0,
+        "ITA":null,
         "ZAF":null,
         "ESP":null,
         "GBR":null,
@@ -6211,6 +6601,19 @@
         "ZAF":null,
         "ESP":null,
         "GBR":4342.0,
+        "USA":null
+    },
+    {
+        "cumulative":89328,
+        "AUS":null,
+        "BEL":null,
+        "BRA":null,
+        "CHN":null,
+        "IRN":1134.0,
+        "ITA":null,
+        "ZAF":null,
+        "ESP":null,
+        "GBR":null,
         "USA":null
     },
     {
@@ -6487,6 +6890,19 @@
         "USA":null
     },
     {
+        "cumulative":124743,
+        "AUS":null,
+        "BEL":null,
+        "BRA":null,
+        "CHN":null,
+        "IRN":null,
+        "ITA":null,
+        "ZAF":null,
+        "ESP":null,
+        "GBR":4676.0,
+        "USA":null
+    },
+    {
         "cumulative":128948,
         "AUS":null,
         "BEL":null,
@@ -6497,6 +6913,19 @@
         "ZAF":null,
         "ESP":null,
         "GBR":null,
+        "USA":null
+    },
+    {
+        "cumulative":129044,
+        "AUS":null,
+        "BEL":null,
+        "BRA":null,
+        "CHN":null,
+        "IRN":null,
+        "ITA":null,
+        "ZAF":null,
+        "ESP":null,
+        "GBR":4301.0,
         "USA":null
     },
     {
@@ -6526,6 +6955,19 @@
         "USA":null
     },
     {
+        "cumulative":133495,
+        "AUS":null,
+        "BEL":null,
+        "BRA":null,
+        "CHN":null,
+        "IRN":null,
+        "ITA":null,
+        "ZAF":null,
+        "ESP":null,
+        "GBR":4451.0,
+        "USA":null
+    },
+    {
         "cumulative":135032,
         "AUS":null,
         "BEL":null,
@@ -6549,6 +6991,19 @@
         "ZAF":null,
         "ESP":null,
         "GBR":null,
+        "USA":null
+    },
+    {
+        "cumulative":138078,
+        "AUS":null,
+        "BEL":null,
+        "BRA":null,
+        "CHN":null,
+        "IRN":null,
+        "ITA":null,
+        "ZAF":null,
+        "ESP":null,
+        "GBR":4583.0,
         "USA":null
     },
     {
@@ -6591,6 +7046,19 @@
         "USA":18360.0
     },
     {
+        "cumulative":143464,
+        "AUS":null,
+        "BEL":null,
+        "BRA":null,
+        "CHN":null,
+        "IRN":null,
+        "ITA":null,
+        "ZAF":null,
+        "ESP":null,
+        "GBR":5386.0,
+        "USA":null
+    },
+    {
         "cumulative":143626,
         "AUS":null,
         "BEL":null,
@@ -6627,6 +7095,19 @@
         "ZAF":null,
         "ESP":null,
         "GBR":null,
+        "USA":null
+    },
+    {
+        "cumulative":148377,
+        "AUS":null,
+        "BEL":null,
+        "BRA":null,
+        "CHN":null,
+        "IRN":null,
+        "ITA":null,
+        "ZAF":null,
+        "ESP":null,
+        "GBR":4913.0,
         "USA":null
     },
     {
@@ -6851,6 +7332,19 @@
         "USA":null
     },
     {
+        "cumulative":181228,
+        "AUS":null,
+        "BEL":null,
+        "BRA":null,
+        "CHN":null,
+        "IRN":null,
+        "ITA":2256.0,
+        "ZAF":null,
+        "ESP":null,
+        "GBR":null,
+        "USA":null
+    },
+    {
         "cumulative":182816,
         "AUS":null,
         "BEL":null,
@@ -6860,6 +7354,32 @@
         "ITA":null,
         "ZAF":null,
         "ESP":5183.0,
+        "GBR":null,
+        "USA":null
+    },
+    {
+        "cumulative":183957,
+        "AUS":null,
+        "BEL":null,
+        "BRA":null,
+        "CHN":null,
+        "IRN":null,
+        "ITA":2729.0,
+        "ZAF":null,
+        "ESP":null,
+        "GBR":null,
+        "USA":null
+    },
+    {
+        "cumulative":187327,
+        "AUS":null,
+        "BEL":null,
+        "BRA":null,
+        "CHN":null,
+        "IRN":null,
+        "ITA":3370.0,
+        "ZAF":null,
+        "ESP":null,
         "GBR":null,
         "USA":null
     },
@@ -6890,6 +7410,19 @@
         "USA":24998.0
     },
     {
+        "cumulative":189973,
+        "AUS":null,
+        "BEL":null,
+        "BRA":null,
+        "CHN":null,
+        "IRN":null,
+        "ITA":2646.0,
+        "ZAF":null,
+        "ESP":null,
+        "GBR":null,
+        "USA":null
+    },
+    {
         "cumulative":191726,
         "AUS":null,
         "BEL":null,
@@ -6903,6 +7436,32 @@
         "USA":null
     },
     {
+        "cumulative":192994,
+        "AUS":null,
+        "BEL":null,
+        "BRA":null,
+        "CHN":null,
+        "IRN":null,
+        "ITA":3021.0,
+        "ZAF":null,
+        "ESP":null,
+        "GBR":null,
+        "USA":null
+    },
+    {
+        "cumulative":195351,
+        "AUS":null,
+        "BEL":null,
+        "BRA":null,
+        "CHN":null,
+        "IRN":null,
+        "ITA":2357.0,
+        "ZAF":null,
+        "ESP":null,
+        "GBR":null,
+        "USA":null
+    },
+    {
         "cumulative":195944,
         "AUS":null,
         "BEL":null,
@@ -6912,6 +7471,84 @@
         "ITA":null,
         "ZAF":null,
         "ESP":4218.0,
+        "GBR":null,
+        "USA":null
+    },
+    {
+        "cumulative":199296,
+        "AUS":null,
+        "BEL":null,
+        "BRA":null,
+        "CHN":null,
+        "IRN":null,
+        "ITA":null,
+        "ZAF":null,
+        "ESP":3352.0,
+        "GBR":null,
+        "USA":null
+    },
+    {
+        "cumulative":201923,
+        "AUS":null,
+        "BEL":null,
+        "BRA":null,
+        "CHN":null,
+        "IRN":null,
+        "ITA":null,
+        "ZAF":null,
+        "ESP":2627.0,
+        "GBR":null,
+        "USA":null
+    },
+    {
+        "cumulative":204975,
+        "AUS":null,
+        "BEL":null,
+        "BRA":null,
+        "CHN":null,
+        "IRN":null,
+        "ITA":null,
+        "ZAF":null,
+        "ESP":3052.0,
+        "GBR":null,
+        "USA":null
+    },
+    {
+        "cumulative":207742,
+        "AUS":null,
+        "BEL":null,
+        "BRA":null,
+        "CHN":null,
+        "IRN":null,
+        "ITA":null,
+        "ZAF":null,
+        "ESP":2767.0,
+        "GBR":null,
+        "USA":null
+    },
+    {
+        "cumulative":210686,
+        "AUS":null,
+        "BEL":null,
+        "BRA":null,
+        "CHN":null,
+        "IRN":null,
+        "ITA":null,
+        "ZAF":null,
+        "ESP":2944.0,
+        "GBR":null,
+        "USA":null
+    },
+    {
+        "cumulative":212415,
+        "AUS":null,
+        "BEL":null,
+        "BRA":null,
+        "CHN":null,
+        "IRN":null,
+        "ITA":null,
+        "ZAF":null,
+        "ESP":1729.0,
         "GBR":null,
         "USA":null
     },
@@ -7161,5 +7798,96 @@
         "ESP":null,
         "GBR":null,
         "USA":24601.0
+    },
+    {
+        "cumulative":787752,
+        "AUS":null,
+        "BEL":null,
+        "BRA":null,
+        "CHN":null,
+        "IRN":null,
+        "ITA":null,
+        "ZAF":null,
+        "ESP":null,
+        "GBR":null,
+        "USA":28065.0
+    },
+    {
+        "cumulative":825041,
+        "AUS":null,
+        "BEL":null,
+        "BRA":null,
+        "CHN":null,
+        "IRN":null,
+        "ITA":null,
+        "ZAF":null,
+        "ESP":null,
+        "GBR":null,
+        "USA":37289.0
+    },
+    {
+        "cumulative":842629,
+        "AUS":null,
+        "BEL":null,
+        "BRA":null,
+        "CHN":null,
+        "IRN":null,
+        "ITA":null,
+        "ZAF":null,
+        "ESP":null,
+        "GBR":null,
+        "USA":17588.0
+    },
+    {
+        "cumulative":869172,
+        "AUS":null,
+        "BEL":null,
+        "BRA":null,
+        "CHN":null,
+        "IRN":null,
+        "ITA":null,
+        "ZAF":null,
+        "ESP":null,
+        "GBR":null,
+        "USA":26543.0
+    },
+    {
+        "cumulative":890524,
+        "AUS":null,
+        "BEL":null,
+        "BRA":null,
+        "CHN":null,
+        "IRN":null,
+        "ITA":null,
+        "ZAF":null,
+        "ESP":null,
+        "GBR":null,
+        "USA":21352.0
+    },
+    {
+        "cumulative":939053,
+        "AUS":null,
+        "BEL":null,
+        "BRA":null,
+        "CHN":null,
+        "IRN":null,
+        "ITA":null,
+        "ZAF":null,
+        "ESP":null,
+        "GBR":null,
+        "USA":48529.0
+    },
+    {
+        "cumulative":965910,
+        "AUS":null,
+        "BEL":null,
+        "BRA":null,
+        "CHN":null,
+        "IRN":null,
+        "ITA":null,
+        "ZAF":null,
+        "ESP":null,
+        "GBR":null,
+        "USA":26857.0
     }
 ]

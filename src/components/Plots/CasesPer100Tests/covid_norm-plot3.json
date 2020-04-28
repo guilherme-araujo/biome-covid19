@@ -4,494 +4,548 @@
         "Italy":null,
         "South Korea":null,
         "UK":null,
+        "Netherlands":null,
         "Belgium":null,
-        "USA":null,
-        "Netherlands":null
+        "USA":null
     },
     {
         "date":"02\/27",
         "Italy":null,
         "South Korea":null,
         "UK":null,
+        "Netherlands":null,
         "Belgium":null,
-        "USA":null,
-        "Netherlands":null
+        "USA":null
     },
     {
         "date":"02\/28",
         "Italy":6.5509266217,
         "South Korea":3.2603813128,
         "UK":0.0771604938,
+        "Netherlands":null,
         "Belgium":null,
-        "USA":null,
-        "Netherlands":null
+        "USA":null
     },
     {
         "date":"02\/29",
         "Italy":6.0099173596,
         "South Korea":4.4145444445,
         "UK":0.1216940053,
+        "Netherlands":null,
         "Belgium":null,
-        "USA":null,
-        "Netherlands":null
+        "USA":null
     },
     {
         "date":"03\/01",
         "Italy":8.1827559746,
         "South Korea":4.9093243762,
         "UK":0.2532383357,
+        "Netherlands":null,
         "Belgium":null,
-        "USA":null,
-        "Netherlands":null
+        "USA":null
     },
     {
         "date":"03\/02",
         "Italy":14.3498973411,
         "South Korea":5.6241763057,
         "UK":0.4202092973,
+        "Netherlands":null,
         "Belgium":null,
-        "USA":null,
-        "Netherlands":null
+        "USA":null
     },
     {
         "date":"03\/03",
         "Italy":13.6132778241,
         "South Korea":4.8003690437,
         "UK":0.7210989292,
+        "Netherlands":null,
         "Belgium":null,
-        "USA":null,
-        "Netherlands":null
+        "USA":null
     },
     {
         "date":"03\/04",
         "Italy":15.9540192168,
         "South Korea":4.6283406316,
         "UK":0.7229849724,
+        "Netherlands":null,
         "Belgium":0.8012525546,
-        "USA":null,
-        "Netherlands":null
+        "USA":null
     },
     {
         "date":"03\/05",
         "Italy":15.2721751983,
         "South Korea":4.2990347118,
         "UK":1.2747336668,
+        "Netherlands":null,
         "Belgium":1.1558624837,
-        "USA":null,
-        "Netherlands":null
+        "USA":null
     },
     {
         "date":"03\/06",
         "Italy":19.7471795333,
         "South Korea":4.0177924906,
         "UK":1.3727695035,
+        "Netherlands":null,
         "Belgium":1.6276666662,
-        "USA":null,
-        "Netherlands":null
+        "USA":null
     },
     {
         "date":"03\/07",
         "Italy":18.7096323873,
         "South Korea":3.6305302149,
         "UK":2.6653640853,
+        "Netherlands":null,
         "Belgium":6.1850469264,
-        "USA":null,
-        "Netherlands":null
+        "USA":null
     },
     {
         "date":"03\/08",
         "Italy":16.2387643481,
         "South Korea":3.3302527441,
         "UK":2.5676492221,
+        "Netherlands":null,
         "Belgium":10.5548486998,
-        "USA":null,
-        "Netherlands":null
+        "USA":null
     },
     {
         "date":"03\/09",
         "Italy":22.6138272086,
         "South Korea":3.4020587969,
         "UK":3.6676134164,
+        "Netherlands":null,
         "Belgium":11.5382545504,
-        "USA":9.586523557,
-        "Netherlands":null
+        "USA":9.5660249686
     },
     {
         "date":"03\/10",
         "Italy":26.7038597212,
         "South Korea":2.5277788035,
         "UK":3.4714116739,
+        "Netherlands":null,
         "Belgium":8.4819008466,
-        "USA":16.1778804395,
-        "Netherlands":null
+        "USA":16.1469011998
     },
     {
         "date":"03\/11",
         "Italy":24.0533803799,
         "South Korea":2.0018608158,
         "UK":4.1998581843,
+        "Netherlands":null,
         "Belgium":4.5633782437,
-        "USA":15.8486389323,
-        "Netherlands":null
+        "USA":15.828681781
     },
     {
         "date":"03\/12",
         "Italy":17.2619076257,
         "South Korea":1.2828001963,
         "UK":3.8656424691,
+        "Netherlands":null,
         "Belgium":3.8006895372,
-        "USA":15.2909551647,
-        "Netherlands":null
+        "USA":15.2789576777
     },
     {
         "date":"03\/13",
         "Italy":16.3240177189,
         "South Korea":1.2286051118,
         "UK":4.1212421583,
+        "Netherlands":null,
         "Belgium":3.2217811061,
-        "USA":10.1920607402,
-        "Netherlands":null
+        "USA":10.1900570272
     },
     {
         "date":"03\/14",
         "Italy":20.9637813477,
         "South Korea":0.8512609679,
         "UK":3.4785499593,
+        "Netherlands":null,
         "Belgium":4.9710387387,
-        "USA":10.9302466283,
-        "Netherlands":null
+        "USA":10.9243306219
     },
     {
         "date":"03\/15",
         "Italy":15.1577785485,
         "South Korea":0.9181231398,
         "UK":7.9674606736,
+        "Netherlands":null,
         "Belgium":7.6796309438,
-        "USA":10.9535684805,
-        "Netherlands":null
+        "USA":10.9480557148
     },
     {
         "date":"03\/16",
         "Italy":23.3556397887,
         "South Korea":1.0415154008,
         "UK":8.6688298955,
+        "Netherlands":null,
         "Belgium":10.4528393965,
-        "USA":9.7252400787,
-        "Netherlands":null
+        "USA":9.7202141902
     },
     {
         "date":"03\/17",
         "Italy":28.5549334599,
         "South Korea":0.9896925671,
         "UK":8.6844474076,
+        "Netherlands":null,
         "Belgium":11.1811987564,
-        "USA":9.5909008477,
-        "Netherlands":null
+        "USA":9.5877988347
     },
     {
         "date":"03\/18",
         "Italy":35.3254285801,
         "South Korea":0.9684204703,
         "UK":5.3339095537,
+        "Netherlands":null,
         "Belgium":9.5653889608,
-        "USA":9.0133653279,
-        "Netherlands":null
+        "USA":9.0108078169
     },
     {
         "date":"03\/19",
         "Italy":27.5641822428,
         "South Korea":1.0217312034,
         "UK":5.8455301281,
+        "Netherlands":null,
         "Belgium":8.3906863598,
-        "USA":12.2235952158,
-        "Netherlands":null
+        "USA":12.2206433117
     },
     {
         "date":"03\/20",
         "Italy":22.4555453629,
         "South Korea":1.0932784062,
         "UK":14.2038132586,
+        "Netherlands":null,
         "Belgium":8.9353371114,
-        "USA":13.1541585784,
-        "Netherlands":null
+        "USA":13.1527806178
     },
     {
         "date":"03\/21",
         "Italy":23.0707676996,
         "South Korea":1.1979939346,
         "UK":15.8845337493,
+        "Netherlands":null,
         "Belgium":14.5590468026,
-        "USA":14.6244756617,
-        "Netherlands":null
+        "USA":14.6231616156
     },
     {
         "date":"03\/22",
         "Italy":23.6148653585,
         "South Korea":1.5174991923,
         "UK":19.4338573783,
+        "Netherlands":null,
         "Belgium":27.7138449898,
-        "USA":15.7238546332,
-        "Netherlands":null
+        "USA":15.7221329284
     },
     {
         "date":"03\/23",
         "Italy":27.1164166122,
         "South Korea":1.5576752844,
         "UK":14.2308393975,
+        "Netherlands":null,
         "Belgium":31.0888241669,
-        "USA":16.9213036126,
-        "Netherlands":null
+        "USA":16.9195553785
     },
     {
         "date":"03\/24",
         "Italy":26.9661564754,
         "South Korea":1.3460716287,
         "UK":15.1683887388,
+        "Netherlands":null,
         "Belgium":26.7079185343,
-        "USA":17.2719529562,
-        "Netherlands":null
+        "USA":17.2701203726
     },
     {
         "date":"03\/25",
         "Italy":24.6528101672,
         "South Korea":0.9391076163,
         "UK":16.1463347244,
+        "Netherlands":null,
         "Belgium":15.5877886833,
-        "USA":16.1111403522,
-        "Netherlands":null
+        "USA":16.1094685826
     },
     {
         "date":"03\/26",
         "Italy":18.5360579771,
         "South Korea":1.0901065687,
         "UK":18.3594947431,
+        "Netherlands":null,
         "Belgium":14.5106071395,
-        "USA":15.778494977,
-        "Netherlands":null
+        "USA":15.7764804879
     },
     {
         "date":"03\/27",
         "Italy":17.3214453129,
         "South Korea":1.1022672877,
         "UK":21.3575842916,
+        "Netherlands":null,
         "Belgium":21.1855569832,
-        "USA":16.4985452132,
-        "Netherlands":null
+        "USA":16.4976288989
     },
     {
         "date":"03\/28",
         "Italy":16.5582933832,
         "South Korea":1.1882600296,
         "UK":27.8719600821,
+        "Netherlands":null,
         "Belgium":26.9058604865,
-        "USA":17.2518979719,
-        "Netherlands":null
+        "USA":17.2536162644
     },
     {
         "date":"03\/29",
         "Italy":19.9418107328,
         "South Korea":1.2593181726,
         "UK":33.8957327075,
+        "Netherlands":null,
         "Belgium":50.8313047874,
-        "USA":18.8979047671,
-        "Netherlands":null
+        "USA":18.9012881984
     },
     {
         "date":"03\/30",
         "Italy":21.1844770811,
         "South Korea":3.4760757961,
         "UK":37.1816196132,
+        "Netherlands":null,
         "Belgium":57.5229378052,
-        "USA":19.3024661604,
-        "Netherlands":null
+        "USA":19.305137595
     },
     {
         "date":"03\/31",
         "Italy":20.1402303717,
         "South Korea":3.3032897352,
         "UK":34.0362217038,
+        "Netherlands":null,
         "Belgium":53.4315738629,
-        "USA":21.0431264948,
-        "Netherlands":null
+        "USA":21.0440870141
     },
     {
         "date":"04\/01",
         "Italy":15.9347224517,
         "South Korea":2.7402266721,
         "UK":32.0864963985,
+        "Netherlands":23.9800402688,
         "Belgium":29.3087723553,
-        "USA":21.6375124476,
-        "Netherlands":23.9800402688
+        "USA":21.6431981251
     },
     {
         "date":"04\/02",
         "Italy":12.4846006212,
         "South Korea":0.892249494,
         "UK":34.9466387927,
+        "Netherlands":20.2998849445,
         "Belgium":20.820244164,
-        "USA":23.0136660219,
-        "Netherlands":20.2998849445
+        "USA":23.0205270665
     },
     {
         "date":"04\/03",
         "Italy":11.9544896366,
         "South Korea":0.869785395,
         "UK":37.7104929202,
+        "Netherlands":20.3667536605,
         "Belgium":23.2194078778,
-        "USA":22.7372064103,
-        "Netherlands":20.3667536605
+        "USA":22.7468180617
     },
     {
         "date":"04\/04",
         "Italy":12.1226193623,
         "South Korea":1.1362479627,
         "UK":43.2385591596,
+        "Netherlands":23.1628429732,
         "Belgium":28.1933001601,
-        "USA":19.3991215982,
-        "Netherlands":23.1628429732
+        "USA":19.4034968263
     },
     {
         "date":"04\/05",
         "Italy":12.7966743752,
         "South Korea":0.9505029814,
         "UK":39.2226391301,
+        "Netherlands":28.2577323658,
         "Belgium":41.6220449389,
-        "USA":21.3090775709,
-        "Netherlands":28.2577323658
+        "USA":21.313164836
     },
     {
         "date":"04\/06",
         "Italy":13.5199843835,
         "South Korea":0.983094424,
         "UK":40.6441643688,
+        "Netherlands":31.0465022394,
         "Belgium":42.411005613,
-        "USA":19.7045965499,
-        "Netherlands":31.0465022394
+        "USA":19.7058407948
     },
     {
         "date":"04\/07",
         "Italy":12.989267245,
         "South Korea":0.8658382055,
         "UK":54.0484286166,
+        "Netherlands":26.725429498,
         "Belgium":37.9426203534,
-        "USA":21.8688244267,
-        "Netherlands":26.725429498
+        "USA":21.8709992362
     },
     {
         "date":"04\/08",
         "Italy":10.2712318796,
         "South Korea":0.6335130402,
-        "UK":50.1577561677,
+        "UK":53.3018087174,
+        "Netherlands":17.7874692088,
         "Belgium":23.8747108177,
-        "USA":19.8639918175,
-        "Netherlands":17.7874692088
+        "USA":19.8361984384
     },
     {
         "date":"04\/09",
         "Italy":8.2836517496,
         "South Korea":0.5015828378,
-        "UK":52.4628779378,
+        "UK":55.6069304876,
+        "Netherlands":12.8020834636,
         "Belgium":20.9471964139,
-        "USA":21.0149061061,
-        "Netherlands":12.8020834636
+        "USA":21.0144458759
     },
     {
         "date":"04\/10",
         "Italy":7.3447421723,
         "South Korea":0.4602901577,
-        "UK":34.2715475606,
+        "UK":37.1244607406,
+        "Netherlands":14.1778214611,
         "Belgium":22.7533504312,
-        "USA":21.480954818,
-        "Netherlands":14.1778214611
+        "USA":21.4794802958
     },
     {
         "date":"04\/11",
         "Italy":7.7110880413,
         "South Korea":0.2572016801,
-        "UK":41.3958603078,
+        "UK":41.104720938,
+        "Netherlands":20.1979425457,
         "Belgium":24.4170647713,
-        "USA":22.8467253155,
-        "Netherlands":20.1979425457
+        "USA":22.8605011924
     },
     {
         "date":"04\/12",
         "Italy":8.2950743286,
         "South Korea":0.6068674756,
-        "UK":47.059081361,
+        "UK":46.7679419911,
+        "Netherlands":28.0766197851,
         "Belgium":26.7322496362,
-        "USA":22.77224051,
-        "Netherlands":28.0766197851
+        "USA":22.7471539552
     },
     {
         "date":"04\/13",
         "Italy":9.3904153231,
         "South Korea":0.7011210393,
-        "UK":57.1959694076,
+        "UK":52.4806008906,
+        "Netherlands":35.8488833667,
         "Belgium":29.8634198403,
-        "USA":22.5583342536,
-        "Netherlands":35.8488833667
+        "USA":22.5328508224
     },
     {
         "date":"04\/14",
         "Italy":10.9886472643,
         "South Korea":0.8046288024,
-        "UK":56.0522462417,
+        "UK":51.3368777247,
+        "Netherlands":32.8899979021,
         "Belgium":26.2081682393,
-        "USA":19.5686050594,
-        "Netherlands":32.8899979021
+        "USA":19.5633317661
     },
     {
         "date":"04\/15",
         "Italy":9.9058114914,
         "South Korea":0.4321861007,
-        "UK":48.9767973108,
+        "UK":44.2614287938,
+        "Netherlands":24.2349709314,
         "Belgium":19.5449059463,
-        "USA":18.3889809359,
-        "Netherlands":24.2349709314
+        "USA":18.3816344164
     },
     {
         "date":"04\/16",
         "Italy":7.6483119776,
         "South Korea":0.4036710899,
         "UK":38.9439241477,
+        "Netherlands":13.4009496738,
         "Belgium":18.478311839,
-        "USA":17.6062544796,
-        "Netherlands":13.4009496738
+        "USA":17.5928492754
     },
     {
         "date":"04\/17",
         "Italy":5.6443010352,
         "South Korea":0.3955500767,
         "UK":37.7977547889,
+        "Netherlands":12.5499537138,
         "Belgium":18.111877478,
-        "USA":18.6650624018,
-        "Netherlands":12.5499537138
+        "USA":18.6471635621
     },
     {
         "date":"04\/18",
         "Italy":5.2644308755,
         "South Korea":0.3407149962,
         "UK":34.1874721463,
+        "Netherlands":16.9931614058,
         "Belgium":21.8066257473,
-        "USA":20.3828255994,
-        "Netherlands":16.9931614058
+        "USA":20.3824231199
     },
     {
         "date":"04\/19",
         "Italy":6.1018683558,
         "South Korea":0.2294409419,
         "UK":34.6512921768,
-        "Belgium":null,
-        "USA":20.5932006295,
-        "Netherlands":29.2309645706
+        "Netherlands":29.2309645706,
+        "Belgium":18.8505405137,
+        "USA":20.602810531
     },
     {
         "date":"04\/20",
         "Italy":6.6295546833,
         "South Korea":0.2444294679,
-        "UK":38.525172423,
+        "UK":37.4374001543,
+        "Netherlands":31.4382067868,
+        "Belgium":19.7311458306,
+        "USA":19.799854257
+    },
+    {
+        "date":"04\/21",
+        "Italy":6.1858891099,
+        "South Korea":0.2103521402,
+        "UK":38.7814813816,
+        "Netherlands":26.7420871451,
+        "Belgium":20.6510964963,
+        "USA":18.68221452
+    },
+    {
+        "date":"04\/22",
+        "Italy":5.3326548893,
+        "South Korea":0.2007697489,
+        "UK":37.8331117378,
+        "Netherlands":14.5850477192,
+        "Belgium":16.8547340238,
+        "USA":16.0805461084
+    },
+    {
+        "date":"04\/23",
+        "Italy":4.5694814536,
+        "South Korea":0.1347502059,
+        "UK":34.151162493,
+        "Netherlands":12.3191750765,
+        "Belgium":14.0235331412,
+        "USA":13.1991295534
+    },
+    {
+        "date":"04\/24",
+        "Italy":4.5392209924,
+        "South Korea":0.1331940395,
+        "UK":29.0465154872,
+        "Netherlands":null,
+        "Belgium":10.4757329962,
+        "USA":10.9380829162
+    },
+    {
+        "date":"04\/25",
+        "Italy":4.6376782719,
+        "South Korea":0.1394894409,
+        "UK":26.2110027982,
+        "Netherlands":null,
+        "Belgium":14.405610394,
+        "USA":9.3637030066
+    },
+    {
+        "date":"04\/26",
+        "Italy":4.5264368091,
+        "South Korea":0.2018345188,
+        "UK":22.471935333,
+        "Netherlands":null,
         "Belgium":null,
-        "USA":19.8010832814,
-        "Netherlands":null
+        "USA":12.6198462773
     }
 ]
