@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Layout from '../../components/Layout';
-import Deaths from '../../components/Deaths';
+import Deaths from '../../components/Plots/Deaths';
 
 import HeadBanner from '../../components/HeadBanner';
 

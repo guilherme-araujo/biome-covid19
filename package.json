@@ -1,7 +1,7 @@
 {
   "name": "covid-biome",
   "version": "0.1.0",
-  "homepage": "https://bioinfo.imd.ufrn.br/covid19",
+  "homepage": "https://bioinfo.imd.ufrn.br/covid19_test",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",

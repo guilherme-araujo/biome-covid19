@@ -37,3 +37,7 @@ figure {
   text-align: center; 
   width: 100%
 }
+
+.btn-primary {
+  margin-left: 0.5em;
+}

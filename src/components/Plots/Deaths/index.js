@@ -8,13 +8,13 @@ export default function TotalNewCases(props) {
     return (
         <div>
             <div className=" justify-content-center d-flex flex-nowrap">
-                <p className="left-label d-none d-lg-block">New Deaths (log scale)</p>
+                <p className={`left-label ${props.className}`}>New Deaths (log scale)</p>
                 <Container className={props.className} >
                     <Deaths/>
 
                 </Container>
             </div>
-            <p>Total deaths (log scale)</p>
+            <p className={props.className}>Total deaths (log scale)</p>
         </div>
     )
   

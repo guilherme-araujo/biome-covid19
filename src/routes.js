@@ -8,7 +8,7 @@ import ScrollToTop from './components/ScrollToTop';
 
 export default function Routes() {
     return(
-        <BrowserRouter basename="covid19">
+        <BrowserRouter basename="covid19_test">
             <ScrollToTop />
             <Switch>
                 <Route path="/" exact component={Landing} />
