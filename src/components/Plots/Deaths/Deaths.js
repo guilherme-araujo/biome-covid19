@@ -1,5 +1,5 @@
 import React from 'react';
-import { ScatterChart, Scatter, CartesianGrid, XAxis, YAxis, ResponsiveContainer, Tooltip, Legend, Label } from 'recharts';
+import { ScatterChart, Scatter, CartesianGrid, XAxis, YAxis, ResponsiveContainer, Tooltip, Label } from 'recharts';
 
 
 import data from './covid_norm-plot4.json';
@@ -11,20 +11,16 @@ class Deaths extends React.Component{
         super(props);
 
         this.countries = country_data;
+        this.chartData = []
 
-        this.state = {
-            countryList: this.countries,
-            chartData: []
-        }
-
-        this.countries.map((country) => {
-            this.state.chartData[country.code] = []
+        this.countries.forEach((country) => {
+            this.chartData[country.code] = []
         })
 
-        data.map( (line) => {
-            this.countries.map( (country) => {
+        data.forEach( (line) => {
+            this.countries.forEach( (country) => {
                 if(line[country.code] !== null && line.cumulative !==0){
-                    this.state.chartData[country.code].push({
+                    this.chartData[country.code].push({
                         "cumulative": line["cumulative"],
                         "daily": line[country.code]
                     })
@@ -39,7 +35,7 @@ class Deaths extends React.Component{
     render() {
         return (
             <div className="d-flex flex-wrap mt-3">
-                { this.state.countryList.map( (country, index) => (              
+                { this.countries.map( (country, index) => (              
                          
                 <ResponsiveContainer height={350} width="33%" >
                         
@@ -48,15 +44,15 @@ class Deaths extends React.Component{
                             >
                         
                                 <CartesianGrid strokeDasharray="3 3" />
-                                <XAxis dataKey="cumulative" domain={[1, Math.max(...this.state.chartData[country.code].map(o => o.cumulative), 0)*1.2 ]} scale="log" type="number" allowDataOverflow >
+                                <XAxis dataKey="cumulative" domain={[1, Math.max(...this.chartData[country.code].map(o => o.cumulative), 0)*1.2 ]} scale="log" type="number" allowDataOverflow >
                                     <Label value={ country.name } position="top" offset={250}/>
                                 </XAxis>
-                                <YAxis dataKey="daily" scale="log" domain={[1, Math.max(...this.state.chartData[country.code].map(o => o.daily), 0)*1.2 ]} type="number" allowDataOverflow >
+                                <YAxis dataKey="daily" scale="log" domain={[1, Math.max(...this.chartData[country.code].map(o => o.daily), 0)*1.2 ]} type="number" allowDataOverflow >
                                    
                                 </YAxis>
                                 
                                 <Tooltip />
-                                <Scatter data={this.state.chartData[country.code]} fill={country.stroke} />
+                                <Scatter data={this.chartData[country.code]} fill={country.stroke} />
                         </ScatterChart>   
 
                                          
