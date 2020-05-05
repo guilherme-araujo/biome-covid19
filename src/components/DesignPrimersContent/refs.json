@@ -1,0 +1,25 @@
+{
+
+    "0": "WHO. https://www.who.int/emergencies/diseases/novel-coronavirus-2019/technical- guidance/laboratory-guidance (2020).",
+    "1": "Chan, JF et al. Improved molecular diagnosis of COVID-19 by nthe novel, highly sensitive and specific COVID-19-RdRp/Hel real-time reverse transcription- polymerase chain reaction assay validated in vitro and with clinical specimens. J Clin Microbiol. 2020 Mar pii: JCM.00310-20. doi: 10.1128/JCM.00310-20.",
+    "2": "Wang Y, Kang H, Liu X, Tong Z.Y. Combination of RT qPCR Testing and clinical features for diagnosis of COVID-19 facilitates management of SARS-CoV- 2 J Med Virol. 2020 Feb 25. doi: 10.1002/jmv.25721",
+    "3": "Udugama B, Kadhiresan P, Kozlowski HN, Malekjahani A, Osborne M, Li VYC Chen H, Mubareka S, Gubbay JB, Chan WCW Diagnosing COVID-19: The Disease and Tools for ACS Nano. 2020 Apr 9. doi: 10.1021/acsnano.",
+    "4": "Rajapaksha P, Elbourne A, Gangadoo S, Brown R, Cozzolino D, Chapman J. A review of methods for the detection of pathogenic microorganisms. Analyst. 2019;144 (2):396-411. org/10.1039/C8AN01488D",
+    "5": "Kelly-Cirino CD, Nkengasong J, Kettler H, Tongio I, Gay-Andrieu F, Escadafal C, Piot P, Peeling RW, Gadde R, Boehme Importance of diagnostics in epidemic and pandemic preparedness. BMJ Glob Health. 2019 Jan 29;4(Suppl 2):e001179. doi: 10.1136/bmjgh-2018-001179.",
+    "6": "Grubaugh ND, Ladner JT, Lemey P, Pybus OG, Rambaut A, Holmes EC, Andersen KG. Tracking virus outbreaks in the twenty-first century. Nat Microbiol. 2019 Jan;4(1):10-19. doi: 1038/s41564-018-0296-2.",
+    "7": "Bustin S, Huggett qPCR primer design revisited. Biomol Detect Quantif. 2017 Nov 22;14:19-28. doi: 10.1016/j.bdq.2017.11.001.",
+    "8": "Gu, , Han, B. &Wang, J. COVID-19: Gastrointestinal Manifestations and Potential Fecal–Oral Transmission. Gastroenterology. 2020 Mar 3. pii: S0016-5085(20)30281-X. doi: 10.1053/j.gastro.2020.02.054.",
+    "9": "Pan, L et al. Clinical Characteristics of COVID19 Patients With Digestive Symptoms in Hubei, China: A Descriptive, Cross-Sectional, Multicenter Study. Am J Gastroenterol. Am J 2020 Apr 14.doi:10.14309/ajg.0000000000000620.",
+    "10": "Zhang X, Chen X, Chen L, Deng C, Zou X, Liu W, Yu H, Chen B, Sun X. Zhang, The evidence of SARS-CoV-2 infection on ocular surface. Ocul Surf. 2020 Apr 11. pii: S1542-0124(20)30065-3. doi: 10.1016/j.jtos.2020.03.010.",
+    "11": "Guo, , Xia, J., Shen, Y. Tong, J. SARS-CoV-2 may be related to conjunctivitis but not necessarily spread through the conjunctiva SARS-CoV-2 and conjunctiva. J. Med. Virol. Preprint at: 2020 Apr 10. doi: 10.1002/jmv.25856.",
+    "12": "Chen L, Liu M, Zhang Z, Qiao K, Huang T, Chen M, Xin N, Huang Z, Liu L, Zhang G, Wang J. Ocular manifestations of a hospitalised patient with confirmed 2019 novel coronavirus disease. Br J Ophthalmol. 2020 Apr 7. pii: bjophthalmol-2020- 316304. doi: 1136/bjophthalmol-2020-316304",
+    "13": "Shu, Y.& McCauley, J. GISAID: Global initiative on sharing all influenza data – from vision to reality. Euro Surveill. 2017 Mar 30;22(13). pii: 30494. doi:10.2807/1560-7917.",
+    "14": "Hatcher EL, Zhdanov SA, Bao Y, Blinkova O, Nawrocki EP, Ostapchuck Y, Schäffer AA, Brister JR. Virus Variation Resource - improved response to emergent viral outbreaks. Nucleic Acids Res. 2017 Jan 4;45(D1):D482-D490. doi: 10.1093/nar/gkw1065.",
+    "15": "Sievers F, Higgins DG. Clustal Omega for making accurate alignments of many protein Protein Sci. 2018 Jan; 27(1):135-145. doi: 10.1002/pro.3290.",
+    "16": "Capella-Gutiérrez S, Silla-Martínez JM, Gabaldón T. trimAl: a tool for automated alignment trimming in large-scale phylogenetic analyses. Bioinformatics. 2009 Aug 1;25(15):1972-3. doi: 1093/bioinformatics/btp348.",
+    "17": "Wu, , Zhao, S., Yu, B. et al. A new coronavirus associated with human respiratory disease in China. 2020Nature 579, 265–269. https://doi.org/10.1038/s41586-020-2008-3",
+    "18": "Ye J, Coulouris G, Zaretskaya I, Cutcutache I, Rozen S, Madden TL. Primer- BLAST: a tool to design target-specific primers for polymerase chain reaction. BMC Bioinformatics. 2012 Jun 18;13:134. doi: 1186/1471-2105-13-134.",
+    "19": "Rice P, Longden I, Bleasby A. EMBOSS: The European Molecular Biology Open Software Suite. Trends Genet. 2000 Jun;16(6):276-7.",
+    "20": "Camacho C, Coulouris G, Avagyan V, Ma N, Papadopoulos J, Bealer K, Madden TL. BLAST+: architecture and BMC Bioinformatics. 2009 Dec 15;10:421. doi: 10.1186/1471-2105-10-421."
+
+}
