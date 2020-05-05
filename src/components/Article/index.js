@@ -8,10 +8,10 @@ import TotalNewCases from '../Plots/TotalNewCases';
 import CasesPer100Tests from '../Plots/CasesPer100Tests';
 import Deaths from '../Plots/Deaths';
 
-import img01 from '../../assets/plots/0426-01.png';
-import img02 from '../../assets/plots/0426-02.png';
-import img03 from '../../assets/plots/0426-03.png';
-import img04 from '../../assets/plots/0426-04.png';
+import img01 from '../../assets/plots/0504-01.png';
+import img02 from '../../assets/plots/0504-02.png';
+import img03 from '../../assets/plots/0504-03.png';
+import img04 from '../../assets/plots/0504-04.png';
 
 import article_pdf from '../../assets/MedRvix_covid_figs.pdf';
 

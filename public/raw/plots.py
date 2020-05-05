@@ -8,9 +8,9 @@ import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 import matplotlib as mpl
 
-covid_norm = pd.read_csv('covid-normalizado-2020-04-26.csv', decimal=',')
-covid_norm2 = pd.read_csv('cumulativo-2020-04-26.csv')
-covid_deaths = pd.read_csv('deaths-2020-04-26.csv')
+covid_norm = pd.read_csv('covid-normalizado-2020-05-04.csv', decimal=',')
+covid_norm2 = pd.read_csv('cumulativo-2020-05-04.csv')
+covid_deaths = pd.read_csv('deaths-2020-05-04.csv')
 
 covid_norm2['date'] = pd.to_datetime(covid_norm2['date'], errors='coerce', format='%d/%m/%Y')
 covid_norm['date'] = pd.to_datetime(covid_norm['date'], errors='coerce', format='%d/%m/%Y')
@@ -21,7 +21,7 @@ covid_deaths['daily'] = covid_deaths['daily'].replace({0: np.nan})
 
 
 #sns.set(style="ticks", rc={"lines.linewidth": 0.9})
-version_str = '0426'
+version_str = '0504'
 
 
 fig_dims = (6, 4)
@@ -62,7 +62,7 @@ g.legend(loc='center right', bbox_to_anchor=(1.45, 0.5), ncol=1)
 #plt.show()
 plt.savefig(version_str+"-02.png", dpi=200, bbox_inches = "tight")'''
 
-'''
+
 #-----FIGURA 3-----
 fig, ax = plt.subplots()
 
@@ -104,7 +104,7 @@ for ax in g.axes.flat:
 
     labels = ax.get_xticklabels()
     for i,l in enumerate(labels):
-        if (i%3 != 0 ): labels[i] = ''
+        if (i%4 != 0 ): labels[i] = ''
         ax.set_xticklabels(labels, rotation=90)
 
 g.fig.tight_layout()
@@ -115,9 +115,9 @@ plt.subplots_adjust(left=0.075, right=1.0, top=1.0, bottom=0.13)
 
 #plt.show()
 
-plt.savefig(version_str+"-03.png", dpi=200, bbox_inches = "tight")'''
+plt.savefig(version_str+"-03.png", dpi=200, bbox_inches = "tight")
 
-
+'''
 # -----FIGURA 4------
 #fig, ax = plt.subplots()
 
@@ -161,4 +161,4 @@ g.fig.text(x=0.5, y=0.01,
 #ax.set(xscale="log", yscale="log")
 
 #plt.show()
-plt.savefig(version_str+"-04.png", dpi=200, bbox_inches = "tight")
+plt.savefig(version_str+"-04.png", dpi=200, bbox_inches = "tight")'''

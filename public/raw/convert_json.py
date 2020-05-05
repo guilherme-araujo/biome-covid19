@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 
 #covid_norm2 = pd.read_csv('covid_norm2.csv')
-covid_norm2 = pd.read_csv('cumulativo-2020-04-26.csv')
+covid_norm2 = pd.read_csv('cumulativo-2020-05-04.csv')
 covid_norm2['date'] = pd.to_datetime(covid_norm2['date'], errors='coerce', format='%d/%m/%Y')
 
 sorted_dates = covid_norm2["date"].unique()
@@ -40,6 +40,6 @@ for date in sorted_dates:
 print(result)
 dataf = pd.DataFrame(result)
 print(dataf)
-pd.DataFrame.from_dict(result).to_json(r'covid_norm.json', indent=4, orient="records")
+pd.DataFrame.from_dict(result).to_json(r'covid_norm-05-04.json', indent=4, orient="records")
 
 
