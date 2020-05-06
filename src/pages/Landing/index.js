@@ -2,7 +2,7 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 
 import Layout from '../../components/Layout';
-import LandingContent from '../../components/LandingContent';
+import LandingContent from '../../components/Content/LandingContent';
 import HeadBanner from '../../components/HeadBanner';
 
 export default function Landing() {

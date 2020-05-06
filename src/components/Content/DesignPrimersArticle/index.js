@@ -1,15 +1,17 @@
 import React from "react";
-import { Container } from 'react-bootstrap';
+import { Container, Breadcrumb } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
-import Contact from '../Contact';
-
-import contactIcon6 from '../../assets/icons/contact-icon6.png';
+import contactIcon6 from '../../../assets/icons/contact-icon6.png';
 
 export default function DesignPrimersArticle(props) {
     return (
         <div className="article">
             
-            <Container>
+                <Breadcrumb>
+                    <Breadcrumb.Item><Link to='/'> Página inicial </Link></Breadcrumb.Item>
+                    <Breadcrumb.Item active> Design and in silico validation of PCR primers </Breadcrumb.Item>
+                </Breadcrumb>
 
                 <div className="p-3">
                     <h3><strong>Authors:</strong></h3>
@@ -31,9 +33,6 @@ export default function DesignPrimersArticle(props) {
                 <p><strong>KEYWORDS:</strong> COVID-19, universal PCR primers, coronavirus, blood, real-time PCR, qPCR, environmental samples</p>
 
                 <h4>Full pre-print article: </h4><a href="https://www.researchsquare.com/article/rs-26306/v1"> https://www.researchsquare.com/article/rs-26306/v1</a>
-
-            </Container>
-            <div style={{minHeight: "50px"}}></div>
             
         </div>
     )

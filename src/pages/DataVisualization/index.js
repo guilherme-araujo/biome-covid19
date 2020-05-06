@@ -2,7 +2,7 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 
 import Layout from '../../components/Layout';
-import DataVisualizationArticle from '../../components/DataVisualizationArticle';
+import DataVisualizationArticle from '../../components/Content/DataVisualizationArticle';
 
 import HeadBanner from '../../components/HeadBanner';
 

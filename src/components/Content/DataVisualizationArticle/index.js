@@ -1,19 +1,19 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
-import { Button } from 'react-bootstrap';
+import { Button, Breadcrumb } from 'react-bootstrap';
 
 
-import TotalCases from '../Plots/TotalCases';
-import TotalNewCases from '../Plots/TotalNewCases';
-import CasesPer100Tests from '../Plots/CasesPer100Tests';
-import Deaths from '../Plots/Deaths';
+import TotalCases from '../../Plots/TotalCases';
+import TotalNewCases from '../../Plots/TotalNewCases';
+import CasesPer100Tests from '../../Plots/CasesPer100Tests';
+import Deaths from '../../Plots/Deaths';
 
-import img01 from '../../assets/plots/0426-01.png';
-import img02 from '../../assets/plots/0426-02.png';
-import img03 from '../../assets/plots/0426-03.png';
-import img04 from '../../assets/plots/0426-04.png';
+import img01 from '../../../assets/plots/0504-01.png';
+import img02 from '../../../assets/plots/0504-02.png';
+import img03 from '../../../assets/plots/0504-03.png';
+import img04 from '../../../assets/plots/0504-04.png';
 
-import article_pdf from '../../assets/MedRvix_covid_figs.pdf';
+import article_pdf from '../../../assets/MedRvix_covid_figs.pdf';
 
 
 import './styles.css';
@@ -53,7 +53,13 @@ export default function DataVisualizationArticle(props) {
     }
 
     return (
+
         <div className="article" >
+            <Breadcrumb>
+                <Breadcrumb.Item><Link to='/'> Página inicial </Link></Breadcrumb.Item>
+                <Breadcrumb.Item active> Considerações sobre a apresentação e interpretação dos dados </Breadcrumb.Item>
+                <Breadcrumb.Item><Link to='epidemics'> Epidemiologia </Link></Breadcrumb.Item>
+            </Breadcrumb>
             <div>
 
                 <div>
@@ -160,8 +166,6 @@ export default function DataVisualizationArticle(props) {
                 <p>Para entender melhor alguns conceitos epidemiológicos importantes sobre epidemias e pandemias,<Link className="a-article" to="/epidemics"> clique aqui. </Link>  </p>
                 
                 <p><strong>Fonte: </strong> <a className="a-article" href="https://ourworldindata.org/coronavirus"> https://ourworldindata.org/coronavirus</a></p>
-
-
 
             </div>
 

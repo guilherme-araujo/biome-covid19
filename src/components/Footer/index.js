@@ -15,8 +15,8 @@ export default function Footer() {
         <>
             <section className="col-md-12 col-sm-12" style={{ backgroundColor: "rgba(39, 47, 56, 0.85)" }}>
             <Row >
-                <Col lg={1}  style={{marginLeft: "3%"}}></Col>
-                <Col lg={3} sm={12} xs={12} style={{marginTop: "7em"}}>                    
+                <Col xl={1}  style={{marginLeft: "3%"}}></Col>
+                <Col xl={3} lg={4} sm={12} xs={12} style={{marginTop: "7em"}}>                    
                     <img className="img-logo-footer" src={logo} alt="logo footer" />
                 </Col>
 
@@ -48,7 +48,7 @@ export default function Footer() {
                     <a className="link-footer" href="https://bioinfo.imd.ufrn.br/index.php?page=technicalpartnership"><p>Technical Partnership</p></a>
                     <a className="link-footer" href="https://bioinfo.imd.ufrn.br/index.php?page=contact"><p>Contact</p></a>
                 </Col>
-                <Col lg={2} ></Col>
+                <Col xl={2} lg={1} ></Col>
             </Row>
             
 
