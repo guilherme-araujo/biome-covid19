@@ -23,15 +23,9 @@
         "name": "UK",
         "slice": 2,
         "interval": 5
-    },
-    {
-        "stroke" : "#410f6e",
-        "name": "Netherlands",
-        "slice": 35,
-        "interval": 2
-    },
+    },    
     {        
-        "stroke": "#8c564b",
+        "stroke": "#410f6e",
         "name": "Belgium",
         "slice": 7,
         "interval" : 5

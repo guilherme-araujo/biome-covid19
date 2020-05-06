@@ -4,12 +4,12 @@ import pandas as pd
 import numpy as np
 
 #covid_norm2 = pd.read_csv('covid_norm2.csv')
-covid_norm2 = pd.read_csv('deaths-2020-04-26.csv')
+covid_norm2 = pd.read_csv('deaths-2020-05-04.csv')
 covid_norm2['date'] = pd.to_datetime(covid_norm2['date'], errors='coerce', format='%d/%m/%Y')
 
 sorted_cumulative = covid_norm2["total"].unique()
 sorted_cumulative.sort()
-countries = covid_norm2["code"].unique()
+countries = covid_norm2["Code"].unique()
 
 result = []
 
@@ -28,7 +28,7 @@ for cumulative in sorted_cumulative:
     line = {"cumulative": cumulative}
 
     for country in countries:
-        cumulative = this_cumulative.loc[this_cumulative["code"]==country,"daily"].unique()
+        cumulative = this_cumulative.loc[this_cumulative["Code"]==country,"daily"].unique()
         country_cumulative = int(cumulative[0]) if not cumulative.size==0 else np.nan
         line.update({ 
             country: country_cumulative 
@@ -40,4 +40,4 @@ for cumulative in sorted_cumulative:
 print(result)
 dataf = pd.DataFrame(result)
 print(dataf)
-pd.DataFrame.from_dict(result).to_json(r'covid_norm-plot4.json', indent=4, orient="records")
+pd.DataFrame.from_dict(result).to_json(r'covid_norm-plot4-05-04.json', indent=4, orient="records")
