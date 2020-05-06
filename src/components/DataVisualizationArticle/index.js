@@ -57,6 +57,15 @@ export default function DataVisualizationArticle(props) {
             <div>
 
                 <div>
+                    <strong>ATUALIZAÇÃO - dia 05/05/20</strong>
+                    <br/>
+                    <br/>
+                    <i>Os gráficos foram atualizados contemplando os dados até 04/05/2020. Os países da Europa continental continuam a sua trajetória descendente (Figuras 2 e 4). Os dados da Figura 4 são particularmente preocupantes para o Brasil visto que o número de mortes continua em um padrão exponencial, ao contrário de Espanha, Itália e Bélgica que já passaram o pico e estão em fase descendente.</i>
+                    <br/>
+                    <br/>
+                </div>
+
+                <div>
                     <strong>ATUALIZAÇÃO - dia 27/04/20</strong>
                     <br/>
                     <br/>
