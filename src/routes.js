@@ -1,10 +1,11 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import Landing from './pages/Landing';
+import DataVisualization from './pages/DataVisualization';
 import Epidemics from './pages/Epidemics';
 import Chart from './pages/Chart';
-import ArticleDesignPimers from './pages/ArticleDesignPrimers';
+import DesignPimers from './pages/DesignPrimers';
+import Landing from './pages/Landing';
 import ScrollToTop from './components/ScrollToTop';
 
 export default function Routes() {
@@ -13,9 +14,10 @@ export default function Routes() {
             <ScrollToTop />
             <Switch>
                 <Route path="/" exact component={Landing} />
+                <Route path="/data-visualization" component={DataVisualization} />
                 <Route path="/epidemics" component={Epidemics} />
                 <Route path="/chart" component={Chart} />
-                <Route path="/designprimers" component={ArticleDesignPimers} />
+                <Route path="/design-primers" component={DesignPimers} />
             </Switch>
           
         </BrowserRouter>

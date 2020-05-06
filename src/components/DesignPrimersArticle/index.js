@@ -5,7 +5,7 @@ import Contact from '../Contact';
 
 import contactIcon6 from '../../assets/icons/contact-icon6.png';
 
-export default function MainContent(props) {
+export default function DesignPrimersArticle(props) {
     return (
         <div className="article">
             
@@ -34,7 +34,7 @@ export default function MainContent(props) {
 
             </Container>
             <div style={{minHeight: "50px"}}></div>
-            <Contact />
+            
         </div>
     )
 }

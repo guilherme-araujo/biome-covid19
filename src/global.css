@@ -1,0 +1,19 @@
+.a-article:hover {
+    text-decoration: none;
+    color: blue;
+}
+  
+.a-article:link {
+    text-decoration: none;
+    color: blue;
+}
+  
+.a-article:visited {
+    text-decoration: none;
+    color: blue;
+}
+  
+.article {
+    margin: 4em 0 4em;
+}
+
