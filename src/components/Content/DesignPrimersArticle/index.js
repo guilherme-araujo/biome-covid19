@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Breadcrumb } from 'react-bootstrap';
+import { Breadcrumb } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 import contactIcon6 from '../../../assets/icons/contact-icon6.png';
