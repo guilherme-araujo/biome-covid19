@@ -8,9 +8,9 @@ import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 import matplotlib as mpl
 
-covid_norm = pd.read_csv('covid-normalizado-2020-05-04.csv', decimal=',')
-covid_norm2 = pd.read_csv('cumulativo-2020-05-04.csv')
-covid_deaths = pd.read_csv('deaths-2020-05-04.csv')
+covid_norm = pd.read_csv('covid-normalizado-2020-05-19.csv', decimal=',')
+covid_norm2 = pd.read_csv('cumulativo-2020-05-19.csv')
+covid_deaths = pd.read_csv('deaths-2020-05-19.csv')
 
 covid_norm2['date'] = pd.to_datetime(covid_norm2['date'], errors='coerce', format='%d/%m/%Y')
 covid_norm['date'] = pd.to_datetime(covid_norm['date'], errors='coerce', format='%d/%m/%Y')
@@ -21,7 +21,7 @@ covid_deaths['daily'] = covid_deaths['daily'].replace({0: np.nan})
 
 
 #sns.set(style="ticks", rc={"lines.linewidth": 0.9})
-version_str = '0504'
+version_str = '0519'
 
 
 fig_dims = (6, 4)
@@ -38,13 +38,13 @@ g.legend(loc='center right', bbox_to_anchor=(1.5, 0.5), ncol=1)
 
 #ax.xaxis.set_major_locator(mdates.AutoDateLocator(minticks=20))
 ax.set_xlim(covid_norm2['date'].min(), covid_norm2['date'].max())
-ax.xaxis.set_major_locator(mdates.WeekdayLocator(byweekday=6) )
+ax.xaxis.set_major_locator(mdates.WeekdayLocator(byweekday=1) )
 ax.xaxis.set_major_formatter(mdates.DateFormatter('%m-%d'))
 ax.yaxis.set_major_formatter(mpl.ticker.StrMethodFormatter('{x:,.0f}'))
 ax.set(xlabel="Date", ylabel="Total Cases (cumulative)" )
 
 #fig.autofmt_xdate()
-plt.setp(ax.get_xticklabels(), rotation=30, horizontalalignment='right')
+plt.setp(ax.get_xticklabels(), rotation=45, horizontalalignment='right')
 
 plt.savefig(version_str+"-01.png", dpi=200, bbox_inches = "tight")'''
 
@@ -62,7 +62,7 @@ g.legend(loc='center right', bbox_to_anchor=(1.45, 0.5), ncol=1)
 #plt.show()
 plt.savefig(version_str+"-02.png", dpi=200, bbox_inches = "tight")'''
 
-
+'''
 #-----FIGURA 3-----
 fig, ax = plt.subplots()
 
@@ -104,7 +104,7 @@ for ax in g.axes.flat:
 
     labels = ax.get_xticklabels()
     for i,l in enumerate(labels):
-        if (i%4 != 0 ): labels[i] = ''
+        if (i%5 != 0 ): labels[i] = ''
         ax.set_xticklabels(labels, rotation=90)
 
 g.fig.tight_layout()
@@ -115,9 +115,9 @@ plt.subplots_adjust(left=0.075, right=1.0, top=1.0, bottom=0.13)
 
 #plt.show()
 
-plt.savefig(version_str+"-03.png", dpi=200, bbox_inches = "tight")
+plt.savefig(version_str+"-03.png", dpi=200, bbox_inches = "tight")'''
 
-'''
+
 # -----FIGURA 4------
 #fig, ax = plt.subplots()
 
@@ -126,14 +126,11 @@ def plot(x, y, data=None, label=None, **kwargs):
     g.set(xscale='log')
     g.set(yscale='log')
 
-
 g = sns.FacetGrid(covid_deaths, col="country", col_wrap=3, sharex=False, sharey=False, hue="country")
 
 #g.set(yscale='log', xscale='log')
 #g = g.map(plt.scatter, "total", "daily")
 g.map_dataframe(plot, 'total', 'daily')
-
-
 
 g.set_axis_labels('', '') 
 g.set_titles('{col_name}')
@@ -161,4 +158,4 @@ g.fig.text(x=0.5, y=0.01,
 #ax.set(xscale="log", yscale="log")
 
 #plt.show()
-plt.savefig(version_str+"-04.png", dpi=200, bbox_inches = "tight")'''
+plt.savefig(version_str+"-04.png", dpi=200, bbox_inches = "tight")

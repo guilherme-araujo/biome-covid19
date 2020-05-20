@@ -8,10 +8,10 @@ import TotalNewCases from '../../Plots/TotalNewCases';
 import CasesPer100Tests from '../../Plots/CasesPer100Tests';
 import Deaths from '../../Plots/Deaths';
 
-import img01 from '../../../assets/plots/0504-01.png';
-import img02 from '../../../assets/plots/0504-02.png';
-import img03 from '../../../assets/plots/0504-03.png';
-import img04 from '../../../assets/plots/0504-04.png';
+import img01 from '../../../assets/plots/0519-01.png';
+import img02 from '../../../assets/plots/0519-02.png';
+import img03 from '../../../assets/plots/0519-03.png';
+import img04 from '../../../assets/plots/0519-04.png';
 
 import article_pdf from '../../../assets/MedRvix_covid_figs.pdf';
 
@@ -105,7 +105,7 @@ export default function DataVisualizationArticle(props) {
                         <Button variant="primary" size="sm" onClick={switchPlot1}>Versão interativa</Button>
                     </i>
                     <i className='img_article d-lg-none'>Acesse em uma tela maior para ter acesso à versão interativa do gráfico.</i>
-                    <figcaption>Figura 1. Casos cumulativos de Covid-19 para dez países, de 1º de janeiro a 19 de abril. </figcaption>
+                    <figcaption>Figura 1. Casos cumulativos de Covid-19 para dez países, de 1º de janeiro a 19 de maio. </figcaption>
                 </figure>
             
                 <p> Veja, por exemplo, a Figura 1, a qual é a forma mais comumente usada para mostrar a dinâmica da doença na população. Ali, o número cumulativo de casos é mostrado em função do tempo. O problema principal desse tipo de gráfico é que ele não permite conclusões sólidas a respeito da pandemia, visto que uma série de parâmetros não são contemplados (principalmente o número de testes) e ao mesmo tempo causa um impacto negativo, e muitas vezes errado, na percepção pública da pandemia. </p>
@@ -138,7 +138,7 @@ export default function DataVisualizationArticle(props) {
                         <Button variant="primary" size="sm" onClick={switchPlot3}>Versão interativa</Button>
                     </i>
                     <i className="img_article d-lg-none">Acesse em uma tela maior para ter acesso à versão interativa do gráfico.</i>
-                    <figcaption>Figura 3. Casos normalizados de Covid-19 (casos por 100 testes) para seis países, de 15 de fevereiro a 19 de abril.</figcaption>
+                    <figcaption>Figura 3. Casos normalizados de Covid-19 (casos por 100 testes) para seis países, de 15 de fevereiro a 19 de maio.</figcaption>
                 </figure>
 
                 <p>No entanto, acreditamos que a forma mais correta de mostrar os dados epidemiológicos de uma pandemia como a COVID-19 é a mostrada na Figura 3. Ali, o número de casos é normalizado pelo número de testes executados (e consequentemente mostrado como o número de casos positivos em 100 testes). O gráfico da Figura 3 permite uma análise mais criteriosa e fidedigna da dinâmica do vírus nas populações mostradas. Por exemplo, a curva para a Itália mostra que um pico de casos positivos (normalizados para 100 testes) foi atingido por volta de 18 de março e desde então o número normalizado de casos vem caindo de forma significativa. Observem a curva para os EUA. Lá, há um pico no início de março seguido de uma queda no meio de março e um novo pico desde o final de março. Para países de dimensões continentais como os EUA, se espera que haja várias ondas epidêmicas. O primeiro pico provavelmente corresponde aos primeiros casos na costa oeste americana enquanto o segundo pico envolve os casos mais recentes na costa leste, principalmente Nova York. O principal problema do gráfico mostrado na Figura 3 é a ausência de dados confiáveis sobre o número de testes para maioria dos países. Outro problema é a falta de critérios homogêneos para decidir quem será testado. </p>
