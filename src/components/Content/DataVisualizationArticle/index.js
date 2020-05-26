@@ -64,15 +64,9 @@ export default function DataVisualizationArticle(props) {
 
                 <div>
                     <p><strong>ATUALIZAÇÃO - dia 20/05/2020</strong></p>
-                    <p><i>Os gráficos foram atualizados contemplando os dados até 19/05/2020. Todas as tendências observadas anteriormente confirmaram-se. Observar, por exemplo,
-as curvas para Espanha e Itália nas Figuras 2,3 e 4. Vale também destacar o Reino Unido onde há claramente uma tendência de queda observada principalmente na Figuras 3 e 4,
-mas também levemente na Figura 2. Infelizmente, os dados para o Brasil mostram que ainda estamos na fase exponencial da doença (Figuras 2 e 4). Os dados para os EUA
-mostram uma leve tendência para queda, como mostrado nas Figuras 2 e 4. </i></p>
+                    <p><i>Os gráficos foram atualizados contemplando os dados até 19/05/2020. Todas as tendências observadas anteriormente confirmaram-se. Observar, por exemplo, as curvas para Espanha e Itália nas Figuras 2, 3 e 4. Vale também destacar o Reino Unido onde há claramente uma tendência de queda observada principalmente nas Figuras 3 e 4, mas também levemente na Figura 2. Infelizmente, os dados para o Brasil mostram que ainda estamos na fase exponencial da doença (Figuras 2 e 4). Os dados para os EUA mostram uma leve tendência de queda, como mostrado nas Figuras 2 e 4. </i></p>
 
-                    <p><i>Vale a pena destacar uma crítica importante em relação à metodologia usada para gerar os dados da Figura 3. Já havíamos alertado no manuscrito que inconsistências nos critérios
-de seleção para quem é testado pode afetar o resultado das análises. Por exemplo, é fato que no início da pandemia os testes estavam restritos aos pacientes sintomáticos. Espera-se
-que com o tempo a base de indivíduos testados aumente consideravelmente, incluindo aí pessoas que não manifestaram a doença. Caso isso seja correto, espera-se que o número normalizado de casos positivos caia ao longo do tempo, já que o grupo de pacientes é enriquecido com casos positivos. Infelizmente, a forma como so dados são disponibilizados pelos orgão competentes impossibilita
-qualquer tipo de correção estatística.</i></p>
+                    <p><i>Vale a pena destacar uma crítica importante em relação à metodologia usada para gerar os dados da Figura 3. Já havíamos alertado no manuscrito que inconsistências nos critérios de seleção para quem é testado pode afetar o resultado das análises. Por exemplo, é fato que no início da pandemia os testes estavam restritos aos pacientes sintomáticos. Espera-se que com o tempo a base de indivíduos testados aumente consideravelmente, incluindo aí pessoas que não manifestaram a doença. Caso isso seja correto, espera-se que o número normalizado de casos positivos caia ao longo do tempo, já que o grupo de pacientes é enriquecido com casos positivos. Infelizmente, a forma como os dados são disponibilizados pelos orgãos competentes impossibilita qualquer tipo de correção estatística.</i></p>
                 </div>
 
                 <div>
