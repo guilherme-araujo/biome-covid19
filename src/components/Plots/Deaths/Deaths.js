@@ -37,7 +37,7 @@ class Deaths extends React.Component{
             <div className="d-flex flex-wrap mt-3">
                 { this.countries.map( (country, index) => (              
                          
-                <ResponsiveContainer height={350} width="33%" >
+                <ResponsiveContainer height={350} width="33%" key={index}>
                         
                         <ScatterChart                                 
                                 margin={{ top: 35, right: 8, left: 30, bottom: 55 }}

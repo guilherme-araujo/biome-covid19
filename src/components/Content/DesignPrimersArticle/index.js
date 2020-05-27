@@ -1,6 +1,6 @@
 import React from "react";
 import { Breadcrumb } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { LinkContainer } from "react-router-bootstrap";
 
 import contactIcon6 from '../../../assets/icons/contact-icon6.png';
 
@@ -9,7 +9,9 @@ export default function DesignPrimersArticle(props) {
         <div className="article">
             
                 <Breadcrumb>
-                    <Breadcrumb.Item><Link to='/'> Página inicial </Link></Breadcrumb.Item>
+                    <LinkContainer to='/'> 
+                        <Breadcrumb.Item>Página inicial </Breadcrumb.Item>
+                    </LinkContainer>
                     <Breadcrumb.Item active> Design and in silico validation of PCR primers </Breadcrumb.Item>
                 </Breadcrumb>
 

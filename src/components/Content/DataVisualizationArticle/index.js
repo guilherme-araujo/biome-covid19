@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 import { Button, Breadcrumb } from 'react-bootstrap';
+import { LinkContainer } from "react-router-bootstrap";
 
 
 import TotalCases from '../../Plots/TotalCases';
@@ -56,9 +57,13 @@ export default function DataVisualizationArticle(props) {
 
         <div className="article" >
             <Breadcrumb>
-                <Breadcrumb.Item><Link to='/'> Página inicial </Link></Breadcrumb.Item>
+                <LinkContainer to='/'>
+                    <Breadcrumb.Item> Página inicial </Breadcrumb.Item>
+                </LinkContainer>
                 <Breadcrumb.Item active> Considerações sobre a apresentação e interpretação dos dados </Breadcrumb.Item>
-                <Breadcrumb.Item><Link to='epidemics'> Epidemiologia </Link></Breadcrumb.Item>
+                <LinkContainer to='/epidemics'>
+                    <Breadcrumb.Item> Epidemiologia </Breadcrumb.Item>
+                </LinkContainer>
             </Breadcrumb>
             <div>
 
