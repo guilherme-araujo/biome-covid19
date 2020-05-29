@@ -3,8 +3,8 @@ import { LineChart, CartesianGrid, XAxis, YAxis, ResponsiveContainer, Tooltip, L
 
 import CustomLine from '../CustomLine';
 
-import data from './covid_norm-plot3.json';
 import country_data from './country_data.json';
+import api from '../../../services/api';
 
 import './styles.css'
 
@@ -27,20 +27,28 @@ class CasesPer100TestsChart extends React.Component {
     constructor(props) {
         super(props);
 
-        this.countries = country_data;
-
         this.state = {
-            countryList: this.countries
+            country_data: country_data,
+            data: []
         }
+    }
 
+    componentDidMount() {
+        api.get('covid_norm-plot3').then(            
+            externalData => {
+                this.setState({
+                    data: externalData.data
+                });
+            }
+        );
     }
 
     render() {
         return (
             <div className="d-flex flex-wrap mt-3">
-                {this.state.countryList.map((country, index) => (
+                {this.state.country_data.map((country, index) => (
                     <ResponsiveContainer height={350} width="33%" key={index} >
-                        <LineChart data={data.slice(country.slice)}
+                        <LineChart data={this.state.data.slice(country.slice)}
                             margin={{ top: 35, right: 8, left: 30, bottom: 55 }}>
                             <CartesianGrid strokeDasharray="3 3" />
                             <XAxis dataKey="date" allowDataOverflow tick={<CustomizedAxisTick />} interval={country.interval}>
