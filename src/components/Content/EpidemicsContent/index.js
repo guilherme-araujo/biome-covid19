@@ -1,14 +1,19 @@
 import React from "react";
 import { Breadcrumb } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { LinkContainer } from "react-router-bootstrap";
 
 export default function EpidemicsContent(props) {
        
     return (
         <div className="article" >
             <Breadcrumb>
-                <Breadcrumb.Item><Link to='/'> Página inicial </Link></Breadcrumb.Item>
-                <Breadcrumb.Item><Link to='/data-visualization'> Considerações sobre a apresentação e interpretação dos dados </Link></Breadcrumb.Item>
+                <LinkContainer to='/'>
+                    <Breadcrumb.Item> Página inicial </Breadcrumb.Item>
+                </LinkContainer>
+                <LinkContainer to='/data-visualization'>
+                    <Breadcrumb.Item> Considerações sobre a apresentação e interpretação dos dados </Breadcrumb.Item>
+                </LinkContainer>
                 <Breadcrumb.Item active> Epidemiologia </Breadcrumb.Item>
             </Breadcrumb>
             <div className="article" >

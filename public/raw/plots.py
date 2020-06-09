@@ -8,9 +8,9 @@ import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 import matplotlib as mpl
 
-covid_norm = pd.read_csv('covid-normalizado-2020-05-19.csv', decimal=',')
-covid_norm2 = pd.read_csv('cumulativo-2020-05-19.csv')
-covid_deaths = pd.read_csv('deaths-2020-05-19.csv')
+covid_norm = pd.read_csv('covid-normalizado-2020-06-01.csv', decimal=',')
+covid_norm2 = pd.read_csv('cumulativo-2020-06-01.csv')
+covid_deaths = pd.read_csv('deaths-2020-06-01.csv')
 
 covid_norm2['date'] = pd.to_datetime(covid_norm2['date'], errors='coerce', format='%d/%m/%Y')
 covid_norm['date'] = pd.to_datetime(covid_norm['date'], errors='coerce', format='%d/%m/%Y')
@@ -21,7 +21,7 @@ covid_deaths['daily'] = covid_deaths['daily'].replace({0: np.nan})
 
 
 #sns.set(style="ticks", rc={"lines.linewidth": 0.9})
-version_str = '0519'
+version_str = '0601'
 
 
 fig_dims = (6, 4)
@@ -75,7 +75,7 @@ def plot(x, y, data=None, label=None, **kwargs):
     sns.lineplot(x, y, data=data, label=label, **kwargs)
 
 #g = sns.lineplot(data=covid_norm, x="date", y="media3days", hue="Country", estimator=None)
-g = sns.FacetGrid(covid_norm, col="country", col_wrap=3, sharex=False, sharey=False, hue="country")
+g = sns.FacetGrid(covid_norm, col="country", col_wrap=2, sharex=False, sharey=False, hue="country")
 #g = g.map(plt.plot, "date", "media3days")
 g.map_dataframe(plot, 'date', 'media3days')
 
@@ -104,7 +104,7 @@ for ax in g.axes.flat:
 
     labels = ax.get_xticklabels()
     for i,l in enumerate(labels):
-        if (i%5 != 0 ): labels[i] = ''
+        if ((i+4)%7 != 0 ): labels[i] = ''
         ax.set_xticklabels(labels, rotation=90)
 
 g.fig.tight_layout()

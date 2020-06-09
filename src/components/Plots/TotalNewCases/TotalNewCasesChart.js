@@ -3,26 +3,24 @@ import { LineChart, CartesianGrid, XAxis, YAxis, ResponsiveContainer, Tooltip, L
 
 import CustomLine from '../CustomLine';
 
-import data from './covid_norm-plot2.json';
 import country_data from './country_data.json';
+import api from '../../../services/api';
 
 class TotalNewCasesChart extends React.Component{
 
     constructor(props) {
         super(props);
 
-        this.countries = country_data;
-
         this.state = {
-            countryList: this.countries
+            country_data: country_data,
+            data: []
         }
-
     }
 
     selectLine(event) {
         let updatedLines = [];
-        for (let i = 0; i < this.state.countryList.length; i++){
-            let country = this.state.countryList[i];
+        for (let i = 0; i < this.state.country_data.length; i++){
+            let country = this.state.country_data[i];
             if (country.code !== event.dataKey) {
                 updatedLines.push(country)
             } else {
@@ -36,21 +34,27 @@ class TotalNewCasesChart extends React.Component{
             }
         }
         this.setState({
-            countryList : updatedLines
+            country_data : updatedLines
         });
+    }
+
+    componentDidMount() {
+        api.get('covid_norm-plot2-06-01').then(            
+            externalData => {
+                this.setState({
+                    data: externalData.data
+                });
+            }
+        );
     }
 
     render() {
         return (
             <ResponsiveContainer height={700} >
-                
                 <LineChart 
-                        data={data}
+                        data={this.state.data}
                         margin={{ top: 25, right: 0, left: 30, bottom: 55 }}
                     >
-
-                        
-                                                
                         <CartesianGrid strokeDasharray="3 3" />
                         <XAxis dataKey="cumulative" domain={[1, 'auto']} scale="log" allowDataOverflow>
                             <Label value="Total Cases (log scale)" position="bottom"/>
@@ -67,7 +71,7 @@ class TotalNewCasesChart extends React.Component{
                             iconSize={20}
                             onClick={(e) => this.selectLine(e)}
                         />
-                        {this.state.countryList.map((country, index) => (
+                        {this.state.country_data.map((country, index) => (
                             <CustomLine 
                                 connectNulls={true}
                                 dataKey={ country.code } 
@@ -79,10 +83,8 @@ class TotalNewCasesChart extends React.Component{
                         <Tooltip />
                 </LineChart>
             </ResponsiveContainer>
-            
         )
     }
-    
 }
 
 export default TotalNewCasesChart;
