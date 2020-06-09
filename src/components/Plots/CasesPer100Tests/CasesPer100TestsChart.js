@@ -34,7 +34,7 @@ class CasesPer100TestsChart extends React.Component {
     }
 
     componentDidMount() {
-        api.get('covid_norm-plot3').then(            
+        api.get('covid_norm-plot3-06-01').then(            
             externalData => {
                 this.setState({
                     data: externalData.data
@@ -47,7 +47,7 @@ class CasesPer100TestsChart extends React.Component {
         return (
             <div className="d-flex flex-wrap mt-3">
                 {this.state.country_data.map((country, index) => (
-                    <ResponsiveContainer height={350} width="33%" key={index} >
+                    <ResponsiveContainer height={350} width="50%" key={index} >
                         <LineChart data={this.state.data.slice(country.slice)}
                             margin={{ top: 35, right: 8, left: 30, bottom: 55 }}>
                             <CartesianGrid strokeDasharray="3 3" />

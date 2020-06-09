@@ -39,7 +39,7 @@ class TotalNewCasesChart extends React.Component{
     }
 
     componentDidMount() {
-        api.get('covid_norm-plot2').then(            
+        api.get('covid_norm-plot2-06-01').then(            
             externalData => {
                 this.setState({
                     data: externalData.data

@@ -9,10 +9,10 @@ import TotalNewCases from '../../Plots/TotalNewCases';
 import CasesPer100Tests from '../../Plots/CasesPer100Tests';
 import Deaths from '../../Plots/Deaths';
 
-import img01 from '../../../assets/plots/0519-01.png';
-import img02 from '../../../assets/plots/0519-02.png';
-import img03 from '../../../assets/plots/0519-03.png';
-import img04 from '../../../assets/plots/0519-04.png';
+import img01 from '../../../assets/plots/0601-01.png';
+import img02 from '../../../assets/plots/0601-02.png';
+import img03 from '../../../assets/plots/0601-03.png';
+import img04 from '../../../assets/plots/0601-04.png';
 
 import article_pdf from '../../../assets/MedRvix_covid_figs.pdf';
 
@@ -66,6 +66,11 @@ export default function DataVisualizationArticle(props) {
                 </LinkContainer>
             </Breadcrumb>
             <div>
+
+                <div>
+                    <p><strong>ATUALIZAÇÃO - dia 02/06/2020</strong></p>
+                    <p><i>Os gráficos foram atualizados contemplando os dados até 01/06/2020. Alguns pontos que merecem ser destacados: i) o aparecimento de um segundo pico nos dados do Iran (Figura 2); ii) a confirmação de um platô nos dados dos EUA (Figura 2); iii) início de um movimento descendente nos dados do Reino Unido (Figura 2) e iv) infelizmente, os dados mostram que o Brasil ainda encontra-se na fase exponencial da doença (Figura 2).</i></p>                    
+                </div>
 
                 <div>
                     <p><strong>ATUALIZAÇÃO - dia 20/05/2020</strong></p>

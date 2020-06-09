@@ -12,20 +12,15 @@
         "slice": 2,
         "interval": 5
     },
+    
     {        
         "stroke": "#6cbc6c",
-        "name": "South Korea",
-        "slice": 2,
-        "interval": 5
-    },
-    {        
-        "stroke": "#d62728",
         "name": "UK",
         "slice": 2,
         "interval": 5
     },    
     {        
-        "stroke": "#410f6e",
+        "stroke": "#d62728",
         "name": "Belgium",
         "slice": 7,
         "interval" : 5

@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 
 #covid_norm2 = pd.read_csv('covid_norm2.csv')
-covid_norm2 = pd.read_csv('cumulativo-2020-05-19.csv')
+covid_norm2 = pd.read_csv('cumulativo-2020-06-01.csv')
 sorted_cumulative = covid_norm2["cumulative"].unique()
 sorted_cumulative.sort()
 countries = covid_norm2["code"].unique()
@@ -38,6 +38,6 @@ for cumulative in sorted_cumulative:
 print(result)
 dataf = pd.DataFrame(result)
 print(dataf)
-pd.DataFrame.from_dict(result).to_json(r'covid_norm-plot2-05-19.json', indent=4, orient="records")
+pd.DataFrame.from_dict(result).to_json(r'covid_norm-plot2-06-01.json', indent=4, orient="records")
 
 

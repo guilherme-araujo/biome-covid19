@@ -22,7 +22,7 @@ class Deaths extends React.Component{
     }
 
     componentDidMount() {
-        api.get('covid_norm-plot4').then(            
+        api.get('covid_norm-plot4-06-01').then(            
             externalData => {
  
                 let _chartData = {}
