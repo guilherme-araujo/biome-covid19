@@ -9,7 +9,7 @@ export default function CasesPer100Tests(props) {
         <div className=" justify-content-center d-flex flex-nowrap">
         <p className={ `left-label ${props.className}` }>Cases per 100 tests (average of three days)</p>
         <Container className={props.className} >
-            <CasesPer100TestsChart/>
+            <CasesPer100TestsChart date={props.date}/>
 
         </Container>
         </div>

@@ -10,7 +10,7 @@ export default function TotalNewCases(props) {
             <div className=" justify-content-center d-flex flex-nowrap">
                 <p className={`left-label ${props.className}`}>New Deaths (log scale)</p>
                 <Container className={props.className} >
-                    <Deaths/>
+                    <Deaths date={props.date} />
 
                 </Container>
             </div>

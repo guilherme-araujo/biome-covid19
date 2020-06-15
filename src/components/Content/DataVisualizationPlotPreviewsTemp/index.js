@@ -32,8 +32,8 @@ export default function DataVisualizationArticle(props) {
     const [classRechartPlt4, setClassRechartPlt4] = useState('d-none d-lg-block')
 
     const [dateList, setDateList] = useState([]);
-    const [activeDate, setActiveDate] = useState('');
-    const [selectedDate, setSelectedDate] = useState('');
+    const [activeDate, setActiveDate] = useState('06-12');
+    const [selectedDate, setSelectedDate] = useState('06-12');
 
     function switchPlot1() {
         setClassStaticPlt1(classStaticPlt1 === 'img_article d-lg-none' ? 'img_article' : 'img_article d-lg-none');
@@ -75,6 +75,7 @@ export default function DataVisualizationArticle(props) {
 
             );
         }
+        console.log(selectedDate)
 
     })
 

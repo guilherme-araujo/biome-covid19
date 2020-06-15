@@ -99,7 +99,7 @@ export default function DataVisualizationArticle(props) {
                 
                 
                 <figure>
-                    <TotalCases className={classRechartPlt1} />
+                    <TotalCases className={classRechartPlt1} date={'06-01'} />
                     <img src={img01} alt="figure 1" width={1316} height={840} className={classStaticPlt1} />
                     <i className={classRechartPlt1}>
                         Clique na legenda para mostrar/ocultar os dados do país. 

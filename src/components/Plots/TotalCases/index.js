@@ -7,7 +7,7 @@ export default function TotalCases(props) {
     
     return (
         <Container className={props.className} >
-            <TotalCasesChart/>
+            <TotalCasesChart date={props.date} />
 
         </Container>
     )

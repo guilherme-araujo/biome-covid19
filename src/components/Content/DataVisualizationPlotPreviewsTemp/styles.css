@@ -1,0 +1,22 @@
+.img_article {    
+  max-width: 1200px;
+  height: auto;
+  width: 100%;
+  object-fit: scale-down;
+  margin: 2em 0 0;
+}
+
+figcaption {
+  font-weight: bold; 
+}
+
+figure {
+  counter-increment: figure;
+  margin: 2em 0 2.333em;
+  text-align: center; 
+  width: 100%
+}
+
+.btn-primary {
+  margin-left: 0.5em;
+}
