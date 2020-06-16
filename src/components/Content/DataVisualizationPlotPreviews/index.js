@@ -12,10 +12,7 @@ import api from '../../../services/api';
 
 import './styles.css';
 
-const img01 = 'https://bioinfo.imd.ufrn.br/covid19-api/v1/plot-img/01/';
-const img02 = 'https://bioinfo.imd.ufrn.br/covid19-api/v1/plot-img/02/';
-const img03 = 'https://bioinfo.imd.ufrn.br/covid19-api/v1/plot-img/03/';
-const img04 = 'https://bioinfo.imd.ufrn.br/covid19-api/v1/plot-img/04/';
+const imgBaseUrl = 'https://bioinfo.imd.ufrn.br/covid19-api/v1/plot-img';
 
 export default function DataVisualizationArticle(props) {
 
@@ -30,6 +27,11 @@ export default function DataVisualizationArticle(props) {
 
     const [classStaticPlt4, setClassStaticPlt4] = useState('img_article d-lg-none')
     const [classRechartPlt4, setClassRechartPlt4] = useState('d-none d-lg-block')
+
+    const [img01, setImg01] = useState(imgBaseUrl+'/01/');
+    const [img02, setImg02] = useState(imgBaseUrl+'/02/');
+    const [img03, setImg03] = useState(imgBaseUrl+'/03/');
+    const [img04, setImg04] = useState(imgBaseUrl+'/04/');
 
     const [dateList, setDateList] = useState([]);
     const [activeDate, setActiveDate] = useState('');
@@ -55,16 +57,27 @@ export default function DataVisualizationArticle(props) {
         setClassRechartPlt4(classRechartPlt4 === 'd-none d-lg-block' ? 'd-none' : 'd-none d-lg-block');
     }
 
+    function SwitchDate(date) {
+        setSelectedDate(date)
+        setImg01(imgBaseUrl+'/01/'+date);
+        setImg02(imgBaseUrl+'/02/'+date);
+        setImg03(imgBaseUrl+'/03/'+date);
+        setImg04(imgBaseUrl+'/04/'+date);
+    }
+
+    /*useEffect(() =>{
+
+        console.log('eff '+selectedDate);
+    },[selectedDate])*/
+
     useEffect(() => {
         if (dateList.length === 0) {
             api.get('dates').then(
                 externalDates => {
                     setDateList(externalDates.data);
-                    console.log(dateList);
                 }
             );
         }
-
 
         if (activeDate === '') {
             api.get('active-date/').then(
@@ -76,7 +89,9 @@ export default function DataVisualizationArticle(props) {
             );
         }
 
-    })
+    }, [])
+
+    
 
     return (
 
@@ -98,10 +113,8 @@ export default function DataVisualizationArticle(props) {
                 <DropdownButton id="dropdown-basic-button" title="Selecionar data" disabled={activeDate===''} >
                     {dateList.map((date, index) => (
                         <>
-                            
-                            <Dropdown.Item key={index} active={date === activeDate} >{date}</Dropdown.Item>
+                            <Dropdown.Item key={index} as="button" active={date === activeDate} onSelect={() => SwitchDate(date)} >{date}</Dropdown.Item>
 
-                            
                         </>
 
                     ))}
@@ -113,6 +126,9 @@ export default function DataVisualizationArticle(props) {
                 ) : (
                         <Button>Selecionar</Button>
                     )}
+
+                <h4>Selecionado: {selectedDate}</h4>
+
                     </div>
 
 

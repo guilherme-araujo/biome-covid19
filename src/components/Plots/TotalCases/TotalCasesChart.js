@@ -14,7 +14,8 @@ class TotalCasesChart extends React.Component {
         this.state = {
             country_data: country_data,
             data: [],
-            date: ''
+            date: '',
+            loading: true
         }
     }
 
@@ -40,17 +41,26 @@ class TotalCasesChart extends React.Component {
         });
     }
 
-    componentDidUpdate() {
-        if (this.state.date === '') {
-            console.log(this.props.date)
-            api.get('covid_norm/' + this.props.date).then(
-                externalData => {
-                    this.setState({
-                        data: externalData.data,
-                        date: this.props.date
-                    });
-                }
-            );
+    
+    componentDidUpdate(previousProps) {
+        if (this.props.date !== previousProps.date ) {
+            this.setState({
+                loading: true
+            }, () => {
+
+                api.get('covid_norm/' + this.props.date).then(
+                    externalData => {
+                        this.setState({
+                            data: externalData.data,
+                            date: this.props.date,
+                            loading: false
+                        });
+                    }
+                );
+
+            })
+
+            
         }
 
     }
@@ -58,7 +68,7 @@ class TotalCasesChart extends React.Component {
     render() {
         return (
             <>
-                {!this.state.date ? (
+                {this.state.loading ? (
                     <ResponsiveContainer height={700} >
                         <p>Loading...</p>
                     </ResponsiveContainer>
@@ -66,7 +76,6 @@ class TotalCasesChart extends React.Component {
                 ) : (
 
                         <ResponsiveContainer height={700} >
-
                             <LineChart
                                 data={this.state.data}
                                 margin={{ top: 25, right: 0, left: 30, bottom: 25 }}

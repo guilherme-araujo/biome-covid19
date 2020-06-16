@@ -14,7 +14,8 @@ class TotalNewCasesChart extends React.Component {
         this.state = {
             country_data: country_data,
             data: [],
-            date: ''
+            date: '',
+            loading: true
         }
     }
 
@@ -39,16 +40,22 @@ class TotalNewCasesChart extends React.Component {
         });
     }
 
-    componentDidUpdate() {
-        if (this.state.date === '') {
-            api.get('covid_norm-plot2/' + this.props.date).then(
-                externalData => {
-                    this.setState({
-                        data: externalData.data,
-                        date: this.props.date
-                    });
-                }
-            );
+    componentDidUpdate(previousProps) {
+        if (this.props.date !== previousProps.date) {
+            this.setState({
+                loading: true
+            }, () => {
+
+                api.get('covid_norm-plot2/' + this.props.date).then(
+                    externalData => {
+                        this.setState({
+                            data: externalData.data,
+                            date: this.props.date,
+                            loading: false
+                        });
+                    }
+                );
+            })
         }
 
     }
@@ -56,7 +63,7 @@ class TotalNewCasesChart extends React.Component {
     render() {
         return (
             <ResponsiveContainer height={700} >
-                {!this.state.date ? (
+                {this.state.loading ? (
                     <p>Loading...</p>
                 ) : (
                         <LineChart

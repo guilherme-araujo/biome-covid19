@@ -1,23 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 import { Button, Breadcrumb } from 'react-bootstrap';
 import { LinkContainer } from "react-router-bootstrap";
-
 
 import TotalCases from '../../Plots/TotalCases';
 import TotalNewCases from '../../Plots/TotalNewCases';
 import CasesPer100Tests from '../../Plots/CasesPer100Tests';
 import Deaths from '../../Plots/Deaths';
 
-import img01 from '../../../assets/plots/0601-01.png';
-import img02 from '../../../assets/plots/0601-02.png';
-import img03 from '../../../assets/plots/0601-03.png';
-import img04 from '../../../assets/plots/0601-04.png';
-
 import article_pdf from '../../../assets/MedRvix_covid_figs.pdf';
 
+import api from '../../../services/api';
 
 import './styles.css';
+
+const imgBaseUrl = 'https://bioinfo.imd.ufrn.br/covid19-api/v1/plot-img';
 
 export default function DataVisualizationArticle(props) {
 
@@ -32,6 +29,14 @@ export default function DataVisualizationArticle(props) {
 
     const [classStaticPlt4, setClassStaticPlt4] = useState('img_article d-lg-none')
     const [classRechartPlt4, setClassRechartPlt4] = useState('d-none d-lg-block')
+
+    const [img01, setImg01] = useState(imgBaseUrl+'/01/');
+    const [img02, setImg02] = useState(imgBaseUrl+'/02/');
+    const [img03, setImg03] = useState(imgBaseUrl+'/03/');
+    const [img04, setImg04] = useState(imgBaseUrl+'/04/');
+
+    const [dateList, setDateList] = useState([]);
+    const [activeDate, setActiveDate] = useState('');
 
     function switchPlot1(){
         setClassStaticPlt1(classStaticPlt1 === 'img_article d-lg-none'? 'img_article' : 'img_article d-lg-none');
@@ -52,6 +57,25 @@ export default function DataVisualizationArticle(props) {
         setClassStaticPlt4(classStaticPlt4 === 'img_article d-lg-none'? 'img_article' : 'img_article d-lg-none');
         setClassRechartPlt4(classRechartPlt4 === 'd-none d-lg-block' ? 'd-none' : 'd-none d-lg-block');
     }
+
+    useEffect(() => {
+        if (dateList.length === 0) {
+            api.get('dates').then(
+                externalDates => {
+                    setDateList(externalDates.data);
+                }
+            );
+        }
+
+        if (activeDate === '') {
+            api.get('active-date/').then(
+                externalData => {
+                    setActiveDate(externalData.data);
+                }
+            );
+        }
+
+    })
 
     return (
 
@@ -99,7 +123,7 @@ export default function DataVisualizationArticle(props) {
                 
                 
                 <figure>
-                    <TotalCases className={classRechartPlt1} date={'06-01'} />
+                    <TotalCases className={classRechartPlt1} date={activeDate} />
                     <img src={img01} alt="figure 1" width={1316} height={840} className={classStaticPlt1} />
                     <i className={classRechartPlt1}>
                         Clique na legenda para mostrar/ocultar os dados do país. 
@@ -116,7 +140,7 @@ export default function DataVisualizationArticle(props) {
                 <p> Veja, por exemplo, a Figura 1, a qual é a forma mais comumente usada para mostrar a dinâmica da doença na população. Ali, o número cumulativo de casos é mostrado em função do tempo. O problema principal desse tipo de gráfico é que ele não permite conclusões sólidas a respeito da pandemia, visto que uma série de parâmetros não são contemplados (principalmente o número de testes) e ao mesmo tempo causa um impacto negativo, e muitas vezes errado, na percepção pública da pandemia. </p>
 
                 <figure>
-                    <TotalNewCases className={classRechartPlt2} />
+                    <TotalNewCases className={classRechartPlt2} date={activeDate} />
                     <img src={img02} alt="figure 2" width={1347} height={744} className={classStaticPlt2} />
                     <i className={classRechartPlt2}>
                         Clique na legenda para mostrar/ocultar os dados do país. 
@@ -133,7 +157,7 @@ export default function DataVisualizationArticle(props) {
                 <p> Uma forma mais correta é o tipo de gráfico mostrado na Figura 2. Ali, o número de novos casos (eixo Y em escala logarítmica) é plotado contra o número total de casos (eixo X em escala logarítmica). Em uma pandemia que está passando por uma fase de crescimento exponencial, espera-se uma linha diagonal, como pode ser mostrado para os dados da doença no Brasil e nos EUA. Na China, onde a doença está aparentemente controlada, os dados mostram claramente que o número de novos casos é perto de zero (com a consequente curva descendente). Há, porém, problemas com esse gráfico. O mais sério é que o tempo não está contemplado, exceto nos casos onde uma animação está presente.</p>
 
                 <figure>
-                    <CasesPer100Tests className={classRechartPlt3} />
+                    <CasesPer100Tests className={classRechartPlt3} date={activeDate} />
                     <img src={img03} alt="figure 3" width={1822} height={1273} className={classStaticPlt3} />
                     <i className={classRechartPlt3}>
                         <Button variant="primary" size="sm" onClick={switchPlot3}>Versão original</Button> 
@@ -149,7 +173,7 @@ export default function DataVisualizationArticle(props) {
                 <p>No entanto, acreditamos que a forma mais correta de mostrar os dados epidemiológicos de uma pandemia como a COVID-19 é a mostrada na Figura 3. Ali, o número de casos é normalizado pelo número de testes executados (e consequentemente mostrado como o número de casos positivos em 100 testes). O gráfico da Figura 3 permite uma análise mais criteriosa e fidedigna da dinâmica do vírus nas populações mostradas. Por exemplo, a curva para a Itália mostra que um pico de casos positivos (normalizados para 100 testes) foi atingido por volta de 18 de março e desde então o número normalizado de casos vem caindo de forma significativa. Observem a curva para os EUA. Lá, há um pico no início de março seguido de uma queda no meio de março e um novo pico desde o final de março. Para países de dimensões continentais como os EUA, se espera que haja várias ondas epidêmicas. O primeiro pico provavelmente corresponde aos primeiros casos na costa oeste americana enquanto o segundo pico envolve os casos mais recentes na costa leste, principalmente Nova York. O principal problema do gráfico mostrado na Figura 3 é a ausência de dados confiáveis sobre o número de testes para maioria dos países. Outro problema é a falta de critérios homogêneos para decidir quem será testado. </p>
 
                 <figure>
-                    <Deaths className={classRechartPlt4} />
+                    <Deaths className={classRechartPlt4} date={activeDate} />
                     <img src={img04} alt="figure 4" width={1791} height={1798} className={classStaticPlt4} />
                     <i className={classRechartPlt4}>
                         <Button variant="primary" size="sm" onClick={switchPlot4}>Versão original</Button> 
