@@ -28,10 +28,10 @@ export default function DataVisualizationArticle(props) {
     const [classStaticPlt4, setClassStaticPlt4] = useState('img_article d-lg-none')
     const [classRechartPlt4, setClassRechartPlt4] = useState('d-none d-lg-block')
 
-    const [img01, setImg01] = useState(imgBaseUrl+'/01/');
-    const [img02, setImg02] = useState(imgBaseUrl+'/02/');
-    const [img03, setImg03] = useState(imgBaseUrl+'/03/');
-    const [img04, setImg04] = useState(imgBaseUrl+'/04/');
+    const [img01, setImg01] = useState(imgBaseUrl + '/01/');
+    const [img02, setImg02] = useState(imgBaseUrl + '/02/');
+    const [img03, setImg03] = useState(imgBaseUrl + '/03/');
+    const [img04, setImg04] = useState(imgBaseUrl + '/04/');
 
     const [dateList, setDateList] = useState([]);
     const [activeDate, setActiveDate] = useState('');
@@ -59,16 +59,29 @@ export default function DataVisualizationArticle(props) {
 
     function SwitchDate(date) {
         setSelectedDate(date)
-        setImg01(imgBaseUrl+'/01/'+date);
-        setImg02(imgBaseUrl+'/02/'+date);
-        setImg03(imgBaseUrl+'/03/'+date);
-        setImg04(imgBaseUrl+'/04/'+date);
+        setImg01(imgBaseUrl + '/01/' + date);
+        setImg02(imgBaseUrl + '/02/' + date);
+        setImg03(imgBaseUrl + '/03/' + date);
+        setImg04(imgBaseUrl + '/04/' + date);
     }
 
-    /*useEffect(() =>{
+    function SetDate(e) {
+        e.preventDefault()
+        let postData = {
+            "date": selectedDate,
+            "key": "2ba9d7c0-ab3c-11ea-8b6e-0800200c9a66"
+        }
+        try {
+            api.post('active-date', postData).then(
+                newDate => {
+                    setActiveDate(newDate.data);
+                }
+            )
+        } catch (err) {
+            alert(err.message);
+        }
 
-        console.log('eff '+selectedDate);
-    },[selectedDate])*/
+    }
 
     useEffect(() => {
         if (dateList.length === 0) {
@@ -89,9 +102,7 @@ export default function DataVisualizationArticle(props) {
             );
         }
 
-    }, [])
-
-    
+    }, [dateList, activeDate]);
 
     return (
 
@@ -108,29 +119,24 @@ export default function DataVisualizationArticle(props) {
             </Breadcrumb>
             <div>
                 <div className="d-flex">
-                
 
-                <DropdownButton id="dropdown-basic-button" title="Selecionar data" disabled={activeDate===''} >
-                    {dateList.map((date, index) => (
-                        <>
-                            <Dropdown.Item key={index} as="button" active={date === activeDate} onSelect={() => SwitchDate(date)} >{date}</Dropdown.Item>
+                    <DropdownButton id="dropdown-basic-button" title="Selecionar data" disabled={activeDate === ''} >
+                        {dateList.map((date, index) => (
+                            <>
+                                <Dropdown.Item key={index} as="button" active={date === activeDate} onSelect={() => SwitchDate(date)} >{date}</Dropdown.Item>
+                            </>
+                        ))}
+                    </DropdownButton>
 
-                        </>
+                    {activeDate === selectedDate ? (
+                        <Button disabled>Selecionado</Button>
+                    ) : (
+                            <Button onClick={SetDate}  >Selecionar</Button>
+                        )}
 
-                    ))}
-                </DropdownButton>
+                    <div className="p-1"><h3>Visualizando: {selectedDate}</h3></div>
 
-
-                {activeDate === selectedDate ? (
-                    <Button disabled>Selecionado</Button>
-                ) : (
-                        <Button>Selecionar</Button>
-                    )}
-
-                <h4>Selecionado: {selectedDate}</h4>
-
-                    </div>
-
+                </div>
 
                 <figure>
                     <TotalCases className={classRechartPlt1} date={selectedDate} />

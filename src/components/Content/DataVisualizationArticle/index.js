@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
-import { Button, Breadcrumb } from 'react-bootstrap';
+import { Button, Breadcrumb, Carousel } from 'react-bootstrap';
 import { LinkContainer } from "react-router-bootstrap";
 
 import TotalCases from '../../Plots/TotalCases';
@@ -30,31 +30,31 @@ export default function DataVisualizationArticle(props) {
     const [classStaticPlt4, setClassStaticPlt4] = useState('img_article d-lg-none')
     const [classRechartPlt4, setClassRechartPlt4] = useState('d-none d-lg-block')
 
-    const [img01, setImg01] = useState(imgBaseUrl+'/01/');
-    const [img02, setImg02] = useState(imgBaseUrl+'/02/');
-    const [img03, setImg03] = useState(imgBaseUrl+'/03/');
-    const [img04, setImg04] = useState(imgBaseUrl+'/04/');
+    const img01 = imgBaseUrl + '/01/';
+    const img02 = imgBaseUrl + '/02/';
+    const img03 = imgBaseUrl + '/03/';
+    const img04 = imgBaseUrl + '/04/';
 
     const [dateList, setDateList] = useState([]);
     const [activeDate, setActiveDate] = useState('');
 
-    function switchPlot1(){
-        setClassStaticPlt1(classStaticPlt1 === 'img_article d-lg-none'? 'img_article' : 'img_article d-lg-none');
+    function switchPlot1() {
+        setClassStaticPlt1(classStaticPlt1 === 'img_article d-lg-none' ? 'img_article' : 'img_article d-lg-none');
         setClassRechartPlt1(classRechartPlt1 === 'd-none d-lg-block' ? 'd-none' : 'd-none d-lg-block');
     }
 
-    function switchPlot2(){
-        setClassStaticPlt2(classStaticPlt2 === 'img_article d-lg-none'? 'img_article' : 'img_article d-lg-none');
+    function switchPlot2() {
+        setClassStaticPlt2(classStaticPlt2 === 'img_article d-lg-none' ? 'img_article' : 'img_article d-lg-none');
         setClassRechartPlt2(classRechartPlt2 === 'd-none d-lg-block' ? 'd-none' : 'd-none d-lg-block');
     }
 
-    function switchPlot3(){
-        setClassStaticPlt3(classStaticPlt3 === 'img_article d-lg-none'? 'img_article' : 'img_article d-lg-none');
+    function switchPlot3() {
+        setClassStaticPlt3(classStaticPlt3 === 'img_article d-lg-none' ? 'img_article' : 'img_article d-lg-none');
         setClassRechartPlt3(classRechartPlt3 === 'd-none d-lg-block' ? 'd-none' : 'd-none d-lg-block');
     }
 
-    function switchPlot4(){
-        setClassStaticPlt4(classStaticPlt4 === 'img_article d-lg-none'? 'img_article' : 'img_article d-lg-none');
+    function switchPlot4() {
+        setClassStaticPlt4(classStaticPlt4 === 'img_article d-lg-none' ? 'img_article' : 'img_article d-lg-none');
         setClassRechartPlt4(classRechartPlt4 === 'd-none d-lg-block' ? 'd-none' : 'd-none d-lg-block');
     }
 
@@ -91,62 +91,81 @@ export default function DataVisualizationArticle(props) {
             </Breadcrumb>
             <div>
 
-                <div>
+                <Carousel controls={false}>
+                    <Carousel.Item>
+                    <div className="p-4 text-dark bg-light">
                     <p><strong>ATUALIZAÇÃO - dia 02/06/2020</strong></p>
-                    <p><i>Os gráficos foram atualizados contemplando os dados até 01/06/2020. Alguns pontos que merecem ser destacados: i) o aparecimento de um segundo pico nos dados do Iran (Figura 2); ii) a confirmação de um platô nos dados dos EUA (Figura 2); iii) início de um movimento descendente nos dados do Reino Unido (Figura 2) e iv) infelizmente, os dados mostram que o Brasil ainda encontra-se na fase exponencial da doença (Figura 2).</i></p>                    
+                    <p><i>Os gráficos foram atualizados contemplando os dados até 01/06/2020. Alguns pontos que merecem ser destacados: i) o aparecimento de um segundo pico nos dados do Iran (Figura 2); ii) a confirmação de um platô nos dados dos EUA (Figura 2); iii) início de um movimento descendente nos dados do Reino Unido (Figura 2) e iv) infelizmente, os dados mostram que o Brasil ainda encontra-se na fase exponencial da doença (Figura 2).</i></p>
                 </div>
 
-                <div>
+                    </Carousel.Item>
+
+                    <Carousel.Item>
+                    <div className="p-4 text-dark bg-light">
                     <p><strong>ATUALIZAÇÃO - dia 20/05/2020</strong></p>
                     <p><i>Os gráficos foram atualizados contemplando os dados até 19/05/2020. Todas as tendências observadas anteriormente confirmaram-se. Observar, por exemplo, as curvas para Espanha e Itália nas Figuras 2, 3 e 4. Vale também destacar o Reino Unido onde há claramente uma tendência de queda observada principalmente nas Figuras 3 e 4, mas também levemente na Figura 2. Infelizmente, os dados para o Brasil mostram que ainda estamos na fase exponencial da doença (Figuras 2 e 4). Os dados para os EUA mostram uma leve tendência de queda, como mostrado nas Figuras 2 e 4. </i></p>
 
                     <p><i>Vale a pena destacar uma crítica importante em relação à metodologia usada para gerar os dados da Figura 3. Já havíamos alertado no manuscrito que inconsistências nos critérios de seleção para quem é testado pode afetar o resultado das análises. Por exemplo, é fato que no início da pandemia os testes estavam restritos aos pacientes sintomáticos. Espera-se que com o tempo a base de indivíduos testados aumente consideravelmente, incluindo aí pessoas que não manifestaram a doença. Caso isso seja correto, espera-se que o número normalizado de casos positivos caia ao longo do tempo, já que o grupo de pacientes é enriquecido com casos positivos. Infelizmente, a forma como os dados são disponibilizados pelos orgãos competentes impossibilita qualquer tipo de correção estatística.</i></p>
                 </div>
 
-                <div>
+                    </Carousel.Item>
+
+                    <Carousel.Item>
+                    <div className="p-4 text-dark bg-light">
                     <p><strong>ATUALIZAÇÃO - dia 05/05/20</strong></p>
-                    <p><i>Os gráficos foram atualizados contemplando os dados até 04/05/2020. Os países da Europa continental continuam a sua trajetória descendente (Figuras 2 e 4). Os dados da Figura 4 são particularmente preocupantes para o Brasil visto que o número de mortes continua em um padrão exponencial, ao contrário de Espanha, Itália e Bélgica que já passaram o pico e estão em fase descendente.</i></p>                    
-                </div>
+                    <p><i>Os gráficos foram atualizados contemplando os dados até 04/05/2020. Os países da Europa continental continuam a sua trajetória descendente (Figuras 2 e 4). Os dados da Figura 4 são particularmente preocupantes para o Brasil visto que o número de mortes continua em um padrão exponencial, ao contrário de Espanha, Itália e Bélgica que já passaram o pico e estão em fase descendente.</i></p>
+                    </div>
 
-                <div>
+                    </Carousel.Item>
+
+                    <Carousel.Item>
+                    <div className="p-4 text-dark bg-light">
                     <p><strong>ATUALIZAÇÃO - dia 27/04/20</strong></p>
-                    <p><i>Os gráficos foram atualizados contemplando os dados até 26/04/20. As tendências vistas na última atualização foram confirmadas. As taxas para Itália e Espanha continuaram uma trajetória descendente (Figuras 2, 3 e 4). Observa-se também o mesmo padrão para UK, Estados Unidos e Iran.</i></p>                    
+                    <p><i>Os gráficos foram atualizados contemplando os dados até 26/04/20. As tendências vistas na última atualização foram confirmadas. As taxas para Itália e Espanha continuaram uma trajetória descendente (Figuras 2, 3 e 4). Observa-se também o mesmo padrão para UK, Estados Unidos e Iran.</i></p>
                 </div>
 
-                <div>
+                    </Carousel.Item>
+
+                    <Carousel.Item>
+                    <div className="p-4 text-dark bg-light">
                     <p><strong>ATUALIZAÇÃO - dia 20/04/20</strong></p>
-                    <p><i>Os gráficos foram atualizados contemplando os dados até 20/04/20. Algumas tendências anteriormente observadas são agora mais significativas. Por exemplo, os novos dados reforçam a ideia que um pico foi ultrapassado para Itália e Espanha (Figuras 2, 3 e 4 para a Itália e Figuras 2 e 4 para a Espanha).  </i></p>                    
+                    <p><i>Os gráficos foram atualizados contemplando os dados até 20/04/20. Algumas tendências anteriormente observadas são agora mais significativas. Por exemplo, os novos dados reforçam a ideia que um pico foi ultrapassado para Itália e Espanha (Figuras 2, 3 e 4 para a Itália e Figuras 2 e 4 para a Espanha).  </i></p>
                 </div>
 
-                <p>O impacto social da pandemia do COVID-19 é sem precedentes na história recente da humanidade. Tal impacto é direto no sentido que o nosso dia a dia foi alterado de forma dramática, mas também indireto já que os efeitos se prolongarão por meses ou anos devido à crise econômica que certamente afetará o mundo todo. Nesse momento, a forma como as autoridades comunicam-se com a população é crucial para um eficaz engajamento do público. Isso é ainda mais crítico em relação a como os dados epidemiológicos são mostrados. </p>
-                
-                
-                
+                    </Carousel.Item>
+                </Carousel>
+
+                                
+
+                <p className="pt-4">O impacto social da pandemia do COVID-19 é sem precedentes na história recente da humanidade. Tal impacto é direto no sentido que o nosso dia a dia foi alterado de forma dramática, mas também indireto já que os efeitos se prolongarão por meses ou anos devido à crise econômica que certamente afetará o mundo todo. Nesse momento, a forma como as autoridades comunicam-se com a população é crucial para um eficaz engajamento do público. Isso é ainda mais crítico em relação a como os dados epidemiológicos são mostrados. </p>
+
+
+
                 <figure>
                     <TotalCases className={classRechartPlt1} date={activeDate} />
                     <img src={img01} alt="figure 1" width={1316} height={840} className={classStaticPlt1} />
                     <i className={classRechartPlt1}>
-                        Clique na legenda para mostrar/ocultar os dados do país. 
-                        <Button variant="primary" size="sm" onClick={switchPlot1}>Versão original</Button> 
+                        Clique na legenda para mostrar/ocultar os dados do país.
+                        <Button variant="primary" size="sm" onClick={switchPlot1}>Versão original</Button>
                     </i>
-                    <i className={classRechartPlt1 === 'd-none'? 'd-none d-lg-block' : 'd-none'}>
+                    <i className={classRechartPlt1 === 'd-none' ? 'd-none d-lg-block' : 'd-none'}>
                         Clique no botão ao lado para retornar à versão interativa
                         <Button variant="primary" size="sm" onClick={switchPlot1}>Versão interativa</Button>
                     </i>
                     <i className='img_article d-lg-none'>Acesse em uma tela maior para ter acesso à versão interativa do gráfico.</i>
                     <figcaption>Figura 1. Casos cumulativos de Covid-19 para dez países, de 1º de janeiro a 19 de maio. </figcaption>
                 </figure>
-            
+
                 <p> Veja, por exemplo, a Figura 1, a qual é a forma mais comumente usada para mostrar a dinâmica da doença na população. Ali, o número cumulativo de casos é mostrado em função do tempo. O problema principal desse tipo de gráfico é que ele não permite conclusões sólidas a respeito da pandemia, visto que uma série de parâmetros não são contemplados (principalmente o número de testes) e ao mesmo tempo causa um impacto negativo, e muitas vezes errado, na percepção pública da pandemia. </p>
 
                 <figure>
                     <TotalNewCases className={classRechartPlt2} date={activeDate} />
                     <img src={img02} alt="figure 2" width={1347} height={744} className={classStaticPlt2} />
                     <i className={classRechartPlt2}>
-                        Clique na legenda para mostrar/ocultar os dados do país. 
-                        <Button variant="primary" size="sm" onClick={switchPlot2}>Versão original</Button> 
+                        Clique na legenda para mostrar/ocultar os dados do país.
+                        <Button variant="primary" size="sm" onClick={switchPlot2}>Versão original</Button>
                     </i>
-                    <i className={classRechartPlt2 === 'd-none'? 'd-none d-lg-block' : 'd-none'}>
+                    <i className={classRechartPlt2 === 'd-none' ? 'd-none d-lg-block' : 'd-none'}>
                         Clique no botão ao lado para retornar à versão interativa
                         <Button variant="primary" size="sm" onClick={switchPlot2}>Versão interativa</Button>
                     </i>
@@ -160,9 +179,9 @@ export default function DataVisualizationArticle(props) {
                     <CasesPer100Tests className={classRechartPlt3} date={activeDate} />
                     <img src={img03} alt="figure 3" width={1822} height={1273} className={classStaticPlt3} />
                     <i className={classRechartPlt3}>
-                        <Button variant="primary" size="sm" onClick={switchPlot3}>Versão original</Button> 
+                        <Button variant="primary" size="sm" onClick={switchPlot3}>Versão original</Button>
                     </i>
-                    <i className={classRechartPlt3 === 'd-none'? 'd-none d-lg-block' : 'd-none'}>
+                    <i className={classRechartPlt3 === 'd-none' ? 'd-none d-lg-block' : 'd-none'}>
                         Clique no botão ao lado para retornar à versão interativa
                         <Button variant="primary" size="sm" onClick={switchPlot3}>Versão interativa</Button>
                     </i>
@@ -176,9 +195,9 @@ export default function DataVisualizationArticle(props) {
                     <Deaths className={classRechartPlt4} date={activeDate} />
                     <img src={img04} alt="figure 4" width={1791} height={1798} className={classStaticPlt4} />
                     <i className={classRechartPlt4}>
-                        <Button variant="primary" size="sm" onClick={switchPlot4}>Versão original</Button> 
+                        <Button variant="primary" size="sm" onClick={switchPlot4}>Versão original</Button>
                     </i>
-                    <i className={classRechartPlt4 === 'd-none'? 'd-none d-lg-block' : 'd-none'}>
+                    <i className={classRechartPlt4 === 'd-none' ? 'd-none d-lg-block' : 'd-none'}>
                         Clique no botão ao lado para retornar à versão interativa
                         <Button variant="primary" size="sm" onClick={switchPlot4}>Versão interativa</Button>
                     </i>
@@ -193,7 +212,7 @@ export default function DataVisualizationArticle(props) {
                 <p>Para baixar o pdf do paper sobre esse projeto depositado em um repositório público e submetido à publicação, <a className="a-article" href={article_pdf}> clique aqui. </a> </p>
 
                 <p>Para entender melhor alguns conceitos epidemiológicos importantes sobre epidemias e pandemias,<Link className="a-article" to="/epidemics"> clique aqui. </Link>  </p>
-                
+
                 <p><strong>Fonte: </strong> <a className="a-article" href="https://ourworldindata.org/coronavirus"> https://ourworldindata.org/coronavirus</a></p>
 
             </div>
