@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
-import { Button, Breadcrumb, Carousel } from 'react-bootstrap';
+import { Button, Breadcrumb, Carousel, Badge } from 'react-bootstrap';
 import { LinkContainer } from "react-router-bootstrap";
 
 import TotalCases from '../../Plots/TotalCases';
@@ -92,52 +92,63 @@ export default function DataVisualizationArticle(props) {
             <div>
 
                 <Carousel controls={false}>
+
                     <Carousel.Item>
-                    <div className="p-4 text-dark bg-light">
-                    <p><strong>ATUALIZAÇÃO - dia 02/06/2020</strong></p>
-                    <p><i>Os gráficos foram atualizados contemplando os dados até 01/06/2020. Alguns pontos que merecem ser destacados: i) o aparecimento de um segundo pico nos dados do Iran (Figura 2); ii) a confirmação de um platô nos dados dos EUA (Figura 2); iii) início de um movimento descendente nos dados do Reino Unido (Figura 2) e iv) infelizmente, os dados mostram que o Brasil ainda encontra-se na fase exponencial da doença (Figura 2).</i></p>
-                </div>
+                        <div className="p-4 text-dark bg-light">
+                            <p><strong>ATUALIZAÇÃO - dia 18/06/2020</strong></p>
+                            <p><i>A partir desta data as atualizações serão automáticas e diárias.</i></p>
+                        </div>
 
                     </Carousel.Item>
 
                     <Carousel.Item>
-                    <div className="p-4 text-dark bg-light">
-                    <p><strong>ATUALIZAÇÃO - dia 20/05/2020</strong></p>
-                    <p><i>Os gráficos foram atualizados contemplando os dados até 19/05/2020. Todas as tendências observadas anteriormente confirmaram-se. Observar, por exemplo, as curvas para Espanha e Itália nas Figuras 2, 3 e 4. Vale também destacar o Reino Unido onde há claramente uma tendência de queda observada principalmente nas Figuras 3 e 4, mas também levemente na Figura 2. Infelizmente, os dados para o Brasil mostram que ainda estamos na fase exponencial da doença (Figuras 2 e 4). Os dados para os EUA mostram uma leve tendência de queda, como mostrado nas Figuras 2 e 4. </i></p>
-
-                    <p><i>Vale a pena destacar uma crítica importante em relação à metodologia usada para gerar os dados da Figura 3. Já havíamos alertado no manuscrito que inconsistências nos critérios de seleção para quem é testado pode afetar o resultado das análises. Por exemplo, é fato que no início da pandemia os testes estavam restritos aos pacientes sintomáticos. Espera-se que com o tempo a base de indivíduos testados aumente consideravelmente, incluindo aí pessoas que não manifestaram a doença. Caso isso seja correto, espera-se que o número normalizado de casos positivos caia ao longo do tempo, já que o grupo de pacientes é enriquecido com casos positivos. Infelizmente, a forma como os dados são disponibilizados pelos orgãos competentes impossibilita qualquer tipo de correção estatística.</i></p>
-                </div>
+                        <div className="p-4 text-dark bg-light">
+                            <p><strong>ATUALIZAÇÃO - dia 02/06/2020</strong></p>
+                            <p><i>Os gráficos foram atualizados contemplando os dados até 01/06/2020. Alguns pontos que merecem ser destacados: i) o aparecimento de um segundo pico nos dados do Iran (Figura 2); ii) a confirmação de um platô nos dados dos EUA (Figura 2); iii) início de um movimento descendente nos dados do Reino Unido (Figura 2) e iv) infelizmente, os dados mostram que o Brasil ainda encontra-se na fase exponencial da doença (Figura 2).</i></p>
+                        </div>
 
                     </Carousel.Item>
 
                     <Carousel.Item>
-                    <div className="p-4 text-dark bg-light">
-                    <p><strong>ATUALIZAÇÃO - dia 05/05/20</strong></p>
-                    <p><i>Os gráficos foram atualizados contemplando os dados até 04/05/2020. Os países da Europa continental continuam a sua trajetória descendente (Figuras 2 e 4). Os dados da Figura 4 são particularmente preocupantes para o Brasil visto que o número de mortes continua em um padrão exponencial, ao contrário de Espanha, Itália e Bélgica que já passaram o pico e estão em fase descendente.</i></p>
-                    </div>
+                        <div className="p-4 text-dark bg-light">
+                            <p><strong>ATUALIZAÇÃO - dia 20/05/2020</strong></p>
+                            <p><i>Os gráficos foram atualizados contemplando os dados até 19/05/2020. Todas as tendências observadas anteriormente confirmaram-se. Observar, por exemplo, as curvas para Espanha e Itália nas Figuras 2, 3 e 4. Vale também destacar o Reino Unido onde há claramente uma tendência de queda observada principalmente nas Figuras 3 e 4, mas também levemente na Figura 2. Infelizmente, os dados para o Brasil mostram que ainda estamos na fase exponencial da doença (Figuras 2 e 4). Os dados para os EUA mostram uma leve tendência de queda, como mostrado nas Figuras 2 e 4. </i></p>
+
+                            <p><i>Vale a pena destacar uma crítica importante em relação à metodologia usada para gerar os dados da Figura 3. Já havíamos alertado no manuscrito que inconsistências nos critérios de seleção para quem é testado pode afetar o resultado das análises. Por exemplo, é fato que no início da pandemia os testes estavam restritos aos pacientes sintomáticos. Espera-se que com o tempo a base de indivíduos testados aumente consideravelmente, incluindo aí pessoas que não manifestaram a doença. Caso isso seja correto, espera-se que o número normalizado de casos positivos caia ao longo do tempo, já que o grupo de pacientes é enriquecido com casos positivos. Infelizmente, a forma como os dados são disponibilizados pelos orgãos competentes impossibilita qualquer tipo de correção estatística.</i></p>
+                        </div>
 
                     </Carousel.Item>
 
                     <Carousel.Item>
-                    <div className="p-4 text-dark bg-light">
-                    <p><strong>ATUALIZAÇÃO - dia 27/04/20</strong></p>
-                    <p><i>Os gráficos foram atualizados contemplando os dados até 26/04/20. As tendências vistas na última atualização foram confirmadas. As taxas para Itália e Espanha continuaram uma trajetória descendente (Figuras 2, 3 e 4). Observa-se também o mesmo padrão para UK, Estados Unidos e Iran.</i></p>
-                </div>
+                        <div className="p-4 text-dark bg-light">
+                            <p><strong>ATUALIZAÇÃO - dia 05/05/20</strong></p>
+                            <p><i>Os gráficos foram atualizados contemplando os dados até 04/05/2020. Os países da Europa continental continuam a sua trajetória descendente (Figuras 2 e 4). Os dados da Figura 4 são particularmente preocupantes para o Brasil visto que o número de mortes continua em um padrão exponencial, ao contrário de Espanha, Itália e Bélgica que já passaram o pico e estão em fase descendente.</i></p>
+                        </div>
 
                     </Carousel.Item>
 
                     <Carousel.Item>
-                    <div className="p-4 text-dark bg-light">
-                    <p><strong>ATUALIZAÇÃO - dia 20/04/20</strong></p>
-                    <p><i>Os gráficos foram atualizados contemplando os dados até 20/04/20. Algumas tendências anteriormente observadas são agora mais significativas. Por exemplo, os novos dados reforçam a ideia que um pico foi ultrapassado para Itália e Espanha (Figuras 2, 3 e 4 para a Itália e Figuras 2 e 4 para a Espanha).  </i></p>
-                </div>
+                        <div className="p-4 text-dark bg-light">
+                            <p><strong>ATUALIZAÇÃO - dia 27/04/20</strong></p>
+                            <p><i>Os gráficos foram atualizados contemplando os dados até 26/04/20. As tendências vistas na última atualização foram confirmadas. As taxas para Itália e Espanha continuaram uma trajetória descendente (Figuras 2, 3 e 4). Observa-se também o mesmo padrão para UK, Estados Unidos e Iran.</i></p>
+                        </div>
+
+                    </Carousel.Item>
+
+                    <Carousel.Item>
+                        <div className="p-4 text-dark bg-light">
+                            <p><strong>ATUALIZAÇÃO - dia 20/04/20</strong></p>
+                            <p><i>Os gráficos foram atualizados contemplando os dados até 20/04/20. Algumas tendências anteriormente observadas são agora mais significativas. Por exemplo, os novos dados reforçam a ideia que um pico foi ultrapassado para Itália e Espanha (Figuras 2, 3 e 4 para a Itália e Figuras 2 e 4 para a Espanha).  </i></p>
+                        </div>
 
                     </Carousel.Item>
                 </Carousel>
 
-                                
-
-                <p className="pt-4">O impacto social da pandemia do COVID-19 é sem precedentes na história recente da humanidade. Tal impacto é direto no sentido que o nosso dia a dia foi alterado de forma dramática, mas também indireto já que os efeitos se prolongarão por meses ou anos devido à crise econômica que certamente afetará o mundo todo. Nesse momento, a forma como as autoridades comunicam-se com a população é crucial para um eficaz engajamento do público. Isso é ainda mais crítico em relação a como os dados epidemiológicos são mostrados. </p>
+                <div className="d-flex current-date-div pt-2">
+                    <p className="p-2">Data dos gráficos em exibição: </p>
+                    <h5 className="pb-2"><Badge variant="warning" >{ activeDate.substr(3,2)+'/'+activeDate.substr(0,2) } </Badge></h5>
+                </div>
+                <p className="pt-2">O impacto social da pandemia do COVID-19 é sem precedentes na história recente da humanidade. Tal impacto é direto no sentido que o nosso dia a dia foi alterado de forma dramática, mas também indireto já que os efeitos se prolongarão por meses ou anos devido à crise econômica que certamente afetará o mundo todo. Nesse momento, a forma como as autoridades comunicam-se com a população é crucial para um eficaz engajamento do público. Isso é ainda mais crítico em relação a como os dados epidemiológicos são mostrados. </p>
 
 
 

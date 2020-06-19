@@ -31,3 +31,7 @@ figure {
 .carousel .carousel-indicators li {
   background-color:black;
 }
+
+.current-date-div {
+  align-items: center;
+}
